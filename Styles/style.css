@@ -1,0 +1,109 @@
+/*
+---- MAIN ----
+---- 1. General ----
+---- 2. Navbar ----
+---- 3. Header ----
+---- 4. Gallery ----
+---- 5. Footer ----
+---- 6. Media Queries ----
+
+---- PODCAST ----
+---- EQUIPO ----
+---- CONTACTO ----
+
+
+*/
+
+
+/* ----1. General---- */
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* ----2. Navbar---- */
+.logo{
+    display: inline-block;
+    padding-top: 0.5rem;
+    
+}
+.nav{
+    background-color:#9B26B6 ;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    padding: 1rem 2rem;
+    position: relative;
+}
+.pages{
+   display:flex;
+   margin-left: auto;
+   margin-right: 1.5rem;
+}
+.pages li{
+    display: inline-block;
+    padding: 0.3rem 3rem;
+    padding-top: 1.1rem;
+    font-size: 1.3rem;
+    
+}
+.pages a{
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+.pages a:hover{
+    text-decoration: underline;
+  
+}
+
+/* ----3. Header---- */
+
+.title{
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+    margin-top: 9rem;
+    width: 50%;
+    
+}
+.title h1{
+    line-height: 1.5rem;
+    font-size: 7rem;
+    display: flex;
+   
+}
+#subtitle {
+    font-style: italic;
+    font-weight: lighter;
+   
+}
+.description p{
+    display: flex;
+    width: 40%;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+.hero img{
+    display: flex;
+    width: 40%;
+    float: right;
+    padding: 1.5rem 2.5rem;
+}
+
+/* ----4. Gallery---- */
+
+/* ----5. Footer---- */
+
+/* ----6. Media Queries---- */
+@media all and (min-width: 480px) and (max-width:768){
+
+    .title h1{
+        font-size: 4rem;
+    }
+ 
+    .hero img{
+        padding: 2.5rem 2.5rem;
+    }
+}
