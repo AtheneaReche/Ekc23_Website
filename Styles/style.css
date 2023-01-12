@@ -19,7 +19,7 @@
 p{
     font-family: 'Montserrat', sans-serif;
 }
-h1{
+h1, h2, h3, h4, h5, h6{
     font-family: 'Noto Sans', sans-serif;
 }
 a{
@@ -49,19 +49,21 @@ body{
 }
 .nav{
     background-color:#753BBD;
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
     height: 30%;
     display: flex;
     padding: 0.2rem 2rem;
     position: relative;
     justify-content: space-between;
+    overflow-x: hidden;
     
 }
 .pages{
     display: flex;
     align-items: flex-start;
     margin-left: auto;
-    margin-right: 1.5rem;
+    margin-right: 1.5rem; 
   
 }
 .pages li{
@@ -115,11 +117,20 @@ body{
 }
 
 /* ----4. Gallery---- */
+#novedades{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    margin-top: 15%;
+    margin-left: 2rem;
+    
+}
 .carroussel{
     width: 100vw;
     max-width: 100%;
     display:flex;
     justify-content: space-around;
+    margin:5% 0 20% 0;
 
 }
 .flecha{
@@ -143,15 +154,15 @@ body{
 
 /* ----5. Footer---- */
 .footer{
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
     background-image: url(../resources/main/footer-web.png);
     margin: 0 auto;
     padding: 1rem 0;
     display:flex;
-
-   
+    position: relative;
 }
+
 #nav-footer li{
   list-style: none;
   padding-bottom: 0.5rem;
@@ -167,26 +178,52 @@ body{
 }
 .info{
     color: #ffffff;
+    text-align: center;
+    margin:0 auto;
+    margin-left: 20%;
+    padding-top: 2.7rem;
+
+    
+    
 }
 .redes{
     color: #ffffff;
     max-width: 100px;
     width: 100%;
- 
+    white-space: nowrap;
+    position: absolute;
+    right: 12%;
+   
    
 }
+
 #instagram{
-    width:50%;
+    width:35%;
     margin-right: 0.5rem;
 }
+#instagram:hover{
+    cursor: pointer;
+}
+
 #twitter{
-    width:50%;
+    width:35%;
 }
+#twitter:hover{
+    cursor: pointer;
+}
+
 #tiktok{
-    width:50%;
-}
-#spotify{
     width:40%;
+}
+#tiktok:hover{
+    cursor: pointer;
+}
+
+#spotify{
+    width:90%;
+}
+#spotify:hover{
+    cursor: pointer;
 }
 
 /* ----6. Media Queries---- */
@@ -208,8 +245,6 @@ body{
 }
 @media all and (min-width:1024px) and (max-width:1280px){
    
-  
-
     .pages li{
         font-size: 1.2rem;
        
@@ -222,6 +257,17 @@ body{
  
     .hero img{
         padding: 2.5rem 2.5rem;
+    }
+
+    .footer{
+        width: 100vw;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .info{
+        margin-left: 3%;
+        
     }
 }
 @media all and (min-width:768px) and (max-width:1024px){
@@ -241,6 +287,25 @@ body{
     .hero img{
         padding: 2.5rem 2.5rem;
     }
+
+    .info{
+        font-size: 0.8rem;
+        padding-top: 6%;
+        margin-left: 1%;
+    }
+
+    #instagram{
+        width: 20%;
+    }
+    #twitter{
+        width: 20%;
+    }
+    #tiktok{
+        width: 24%;
+    }
+    #spotify{
+        width: 65%;
+    }
 }
 @media all and (min-width:480px) and (max-width:768px){
  
@@ -249,26 +314,153 @@ body{
         display: block;
     }*/
 
+    .logo img{
+        width: 80%;
+    }
+
     .title h1{
-        font-size: 1.3rem;
+        font-size: 1.9rem;
         line-height: 0;
 
     }
  
     .hero img{
         padding: 2.5rem 2.5rem;
+    }
+
+    .pages li{
+        padding: 0rem 1rem;
+        padding-top: 1rem;
+        font-size: 0.9rem; /* px */
+    }
+
+    .carroussel{
+        margin:5% 0 20% 15%;
+        width: 80vw;
+    }
+
+    #description-img{
+        font-size:1.1rem;
+    }
+
+    #nav-footer li{
+       font-size: 0.8rem;
+      }
+      #nav-footer a{
+        padding: 0rem 0rem;
+    }
+
+    .info{
+        font-size: 0.8rem;
+        padding-top: 6%;
+        margin-left: 1%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .redes{
+        font-size: 0.8rem;
+    }
+
+    #instagram{
+        width: 20%;
+    }
+    #twitter{
+        width: 20%;
+    }
+    #tiktok{
+        width: 24%;
+    }
+    #spotify{
+        width: 65%;
     }
 }
 @media all and (max-width:480px){
-  
+
+    .logo img{
+        width: 70%;
+    }  
 
     .title h1{
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 0;
-
     }
  
     .hero img{
-        padding: 2.5rem 2.5rem;
+        padding: 2.5rem 0rem 2.5rem 2rem;
+    }
+
+    .pages li{
+        padding: 0rem 1rem;
+        padding-top: 0.5rem;
+        font-size: 0.6rem; /* px */
+    }
+
+    .carroussel{
+        margin:5% 0 20% 20%;
+        width: 60vw;
+        max-width: 60%;
+    }
+
+    .carroussel{
+        width: 20vw;
+        max-width: 20%;
+        display:flex;
+        justify-content: space-around;
+        margin:5% 0 20% 45%;
+    
+    }
+    .contenido1{
+        width: 50%;
+    }
+    .contenido2{
+        width: 50%;
+    }
+    .contenido3{
+        width: 50%;
+    }
+    .flecha{
+        max-width: 10px;
+        width: 20%;
+    }
+   
+
+    #description-img{
+        font-size:1.05rem;
+    }
+    #subtext{
+        font-size: 0.937rem; /* 15px */
+    }
+
+    #nav-footer li{
+       font-size: 0.8rem;
+      }
+      #nav-footer a{
+        padding: 0rem 0rem;
+    }
+
+    .info{
+        font-size: 0.8rem;
+        padding-top: 6%;
+        margin-left: 1%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .redes{
+        font-size: 0.8rem;
+    }
+
+    #instagram{
+        width: 20%;
+    }
+    #twitter{
+        width: 20%;
+    }
+    #tiktok{
+        width: 24%;
+    }
+    #spotify{
+        width: 65%;
     }
 }
