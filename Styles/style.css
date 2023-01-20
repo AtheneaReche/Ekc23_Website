@@ -43,9 +43,10 @@ body{
     
 }
 .logo img{
-    max-width: 100px;
+    max-height: 100px;
     width: 100%;
     display: inline-block;
+    
 }
 .nav{
     background-color:#753BBD;
@@ -187,7 +188,7 @@ body{
   padding-bottom: 0.5rem;
 }
 #nav-footer a{
-    color: #ffffff;
+    color: #ffffff; 
     padding: 0.3rem 3rem;
     text-decoration: none;
    
@@ -294,7 +295,7 @@ body{
         
     }
 }
-@media all and (min-width:768px) and (max-width:1024px){
+@media all and (min-width:831px) and (max-width:1024px){
    
     
     
@@ -329,7 +330,73 @@ body{
         width: 65%;
     }
 }
-@media all and (min-width:480px) and (max-width:768px){
+@media all and (min-width:769px) and (max-width:831px){
+
+    .logo img{
+        width: 80%;
+    }
+
+    .title h1{
+        font-size: 3rem;
+       
+
+    }
+    #subtitle{
+        margin-top: 60px;
+    }
+ 
+    .hero img{
+        
+    }
+
+    .pages li{
+        padding: 0rem 1rem;
+        padding-top: 1rem;
+        font-size: 0.9rem; /* px */
+    }
+
+    .carroussel{
+        margin:5% 0 20% 15%;
+        width: 80vw;
+    }
+
+    #description-img{
+        font-size:1.1rem;
+    }
+
+    #nav-footer li{
+       font-size: 0.8rem;
+      }
+    #nav-footer a{
+        padding: 0rem 0rem;
+    }
+
+    .info{
+        font-size: 0.8rem;
+        padding-top: 6%;
+        margin-left: 12%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .redes{
+        font-size: 0.8rem;
+    }
+
+    #instagram{
+        width: 20%;
+    }
+    #twitter{
+        width: 20%;
+    }
+    #tiktok{
+        width: 24%;
+    }
+    #spotify{
+        width: 65%;
+    }
+}
+@media all and (min-width:612px) and (max-width:768px){
 
     .logo img{
         width: 80%;
@@ -401,7 +468,70 @@ body{
     }
 
     .title h1{
-        font-size: 2.9rem;
+        font-size: 2.6rem;
+        margin-top: 20px;
+       
+
+    }
+    #subtitle{
+        margin-top: 70px;
+    }
+ 
+
+    .pages li{
+        padding: 0rem 1rem;
+        padding-top: 1rem;
+        font-size: 0.9rem; /* px */
+    }
+
+    .carroussel{
+        margin:5% 0 20% 15%;
+        width: 80vw;
+    }
+
+    #description-img{
+        font-size:1.1rem;
+    }
+
+    #nav-footer li{
+       font-size: 0.8rem;
+      }
+    #nav-footer a{
+        padding: 0rem 0rem;
+    }
+
+    .info{
+        font-size: 0.8rem;
+        padding-top: 6%;
+        margin-left: 12%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .redes{
+        font-size: 0.8rem;
+    }
+
+    #instagram{
+        width: 20%;
+    }
+    #twitter{
+        width: 20%;
+    }
+    #tiktok{
+        width: 24%;
+    }
+    #spotify{
+        width: 65%;
+    }
+}
+@media all and (min-width:481px) and (max-width:530px){
+    .logo img{
+        width: 80%;
+    }
+
+    .title h1{
+        font-size: 2.2rem;
         margin-top: 20px;
        
 
@@ -463,14 +593,30 @@ body{
     .logo img{
         width: 70%;
     }  
+    .contenido-principal{
+        flex-direction: column-reverse;
+        width: auto;
+        padding-top: 0;
+        margin-top: 30%;
+    }
+    .text-container{
+        max-width: 100%;
+        width: 100vw;
+    }
 
     .title h1{
-        font-size: 1.9rem;
+        font-size: 2.5rem;
         margin-top: 10px;
         
     }
-    #description{
-      
+    #subtitle{
+      margin-top: 60px;
+     
+    }
+
+    .hero{
+        max-width: 100%;
+        width: 100vw;
     }
  
     .hero img{
@@ -567,7 +713,7 @@ body{
       }
       li a:hover,
       li a:focus {
-        background: #1ABC9C;
+       
         color: #fff;
       }
       .nav .pages{
@@ -582,24 +728,17 @@ body{
         width: 60vw;
         max-width: 60%;
     }
-
-    .carroussel{
-        width: 20vw;
-        max-width: 20%;
-        display:flex;
-        justify-content: space-around;
-        margin:5% 0 20% 45%;
     
-    }
-    .contenido1{
+   
+    #contenido1 {
+        display: block;
         width: 50%;
-    }
-    .contenido2{
+      }
+      #contenido2, #contenido3 {
+        display: none;
         width: 50%;
-    }
-    .contenido3{
-        width: 50%;
-    }
+      }
+   
     .flecha{
         max-width: 10px;
         width: 20%;
@@ -646,12 +785,26 @@ body{
     }
 }
 @media all and (max-width:380px){
+    .logo{
+        width:60%;
+    }
+    
     .logo img{
         width: 70%;
     }  
+    .contenido-principal{
+        flex-direction: column-reverse;
+        width: auto;
+        padding-top: 0;
+        margin-top: 30%;
+    }
+    .text-container{
+        max-width: 100%;
+        width: 100vw;
+    }
 
     .title h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 5px;
     }
     #subtitle{
@@ -661,8 +814,12 @@ body{
     .description p{
         font-size: 1rem;
     }
+    .hero{
+        max-width: 100%;
+        width: 100vw;
+    }
     .hero img{
-       
+       width: 80%;
     }
     #toggle {
         display: block;
@@ -751,7 +908,7 @@ body{
       }
       li a:hover,
       li a:focus {
-        background: #1ABC9C;
+        
         color: #fff;
       }
       .nav .pages{
