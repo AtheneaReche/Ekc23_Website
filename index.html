@@ -7,7 +7,8 @@
      <!-- Enlaces para obtener las tipografías -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap'); </style>
-     <!-- Enlace a la página de estilos de este index.html -->
+    <link rel="icon" type="image/x-icon" href="/resources/main/favicon.png" />
+    <!-- Enlace a la página de estilos de este index.html -->
     <link href="Styles/style.css" rel="stylesheet" type="text/css">
     <title>Ekc23</title>
 </head>
@@ -29,7 +30,6 @@
                 <li id="dropdown"><a rel="EKC" href="index.html">EKC23</a>
                     <ul id="dropdown-options">
                         <li><a href="#">EKC22</a></li>
-                        <li><a href="#">EKC21</a></li>
                     </ul>
                 </li>
 
@@ -68,27 +68,29 @@
     </div>
      <!-- Carroussel de disposición de novedades -->
     <div class="carroussel">
-        <div class="flecha">
+        <button class="flecha">
             <img id="flecha-izquierda" src="resources/main/flecha.png" alt="flecha-izquierda-carroussel">
+        </button>
+        <div class="contenido-carroussel">
+            <div class="slide" id="contenido1">
+                <img src="" alt="imagen1">
+                <p id="subtext">Texto/Texto/Texto</p>
+                <p id="description-img">Texto principal</p>
+            </div>
+            <div class="slide" id="contenido2">
+                <img src="" alt="imagen2">
+                <p id="subtext">Texto/Texto/Texto</p>
+                <p id="description-img">Texto principal</p>
+            </div>
+            <div class="slide" id="contenido3">
+                <img src="" alt="imagen3">
+                <p id="subtext">Texto/Texto/Texto</p>
+                <p id="description-img">Texto principal</p>
+            </div>
         </div>
-        <div id="contenido1">
-            <img src="" alt="imagen1">
-            <p id="subtext">Texto/Texto/Texto</p>
-            <p id="description-img">Texto principal</p>
-        </div>
-        <div id="contenido2">
-            <img src="" alt="imagen2">
-            <p id="subtext">Texto/Texto/Texto</p>
-            <p id="description-img">Texto principal</p>
-        </div>
-        <div id="contenido3">
-            <img src="" alt="imagen3">
-            <p id="subtext">Texto/Texto/Texto</p>
-            <p id="description-img">Texto principal</p>
-        </div>
-        <div class="flecha">
+        <button class="flecha">
              <img id="flecha-derecha" src="resources/main/flecha.png" alt="flecha-derecha-carroussel">
-         </div>
+        </button>
        <!--- <div id="contenido4"></div> --->
     </div>
      <!-- Footer -->
