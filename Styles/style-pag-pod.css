@@ -122,7 +122,7 @@ body{
     display: flex;
     width: 100vw;
     max-width: 100%;
-    margin-top: 9rem;
+    margin-top: 4rem;
     padding-top: 3rem;
     
 }
@@ -131,28 +131,48 @@ body{
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
+    border-width:thin;
+    border-color: rgb(187, 187, 187);
+    border-style: solid;
   
 }
-.hero{
+.descripcion-podcast{
     width: 50%;
+    border-width:thin;
+    border-color: rgb(187, 187, 187);
+    border-style: solid;
     
 }
-.hero img{
-    width: 70%;
-    flex: 2;
+.descripcion-podcast h4{
     order: 2;
-    padding-left: 10%;
-   
+    padding: 3%;
+    font-size: 1.5rem; /* 24px */
+    margin-top: -10px;
+    font-weight: lighter;
+    margin-bottom: 2px;
 }
-.title{
+.descripcion-podcast p{
+    order: 2;
+    padding: 0 3%;
+    font-size: 1rem; /* 16px */
+    margin-top: -10px;
+    font-weight: lighter;
+}
+
+.titulo-podcast{
     flex: 1;
     align-items: flex-start;
     width: 50%;
     padding-left: 3%;
 }
-.title h1{
+.titulo-podcast h4{
     margin: 0;
-    font-size: 7rem; /* 112px */ 
+    font-size: 1rem; /* 16px */ 
+}
+.titulo-podcast h2{
+    margin: 0;
+    font-size: 2rem; /* 32px */ 
+    padding-bottom: 20px;
 }
 #subtitle {
     width: 50%;
@@ -163,86 +183,37 @@ body{
  
    
 }
-.description p{
-    font-size: 1.5rem; /* 24px */
-    order: 2;
-    padding-left: 3%;
-}
-
-
 
 
 /* ----4. Gallery---- */
-#novedades{
+.titulo-fotos{
     max-width: 100%;
     display: flex;
-    margin-top: 15%;
+    margin-top: 5%;
  
     
 }
-#novedades h2{
+.titulo-fotos h2{
     margin-left: 2rem;
 }
-.carroussel{
-    width: 100vw;
-    max-width: 100%;
-    display:flex;
-    justify-content: space-around;
-    margin:5% 0 20% 0;
-    position: relative;
-   
-   
 
-}
-.contenido-carroussel{
-    width: 100%;
-    height: 300px;
+.imagenes{
     display: flex;
     margin:0;
     padding: 0;
-    overflow: scroll;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    -ms-overflow-style: none; 
-    transition: scroll-left 0.5s ease-in-out;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-#contenido1, #contenido2, #contenido3{
-    flex: 1 0 50%;
-    text-align: center;
+#imagen1, #imagen2, #imagen3, #imagen4{
+    
+    width: 45%;
+    margin-bottom: 4%;
 }
 
-.flecha{
-    max-width: 100px;
+#imagen1 img{
     width: 100%;
-    margin: 0 10%;
-    position: relative;
-    display:flex;
-    top:118px;
-    bottom:0;
-    border:none;
-    background-color: transparent;
-    width: 2rem;
-    height: 4rem;
-    font-size: 3rem;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: opacity 100ms;
 }
-.flecha:hover, .flecha:focus{
-    opacity:1;
-}
-#flecha-izquierda{
-    transform: scaleX(-1);
-}
-#flecha-derecha{
-    float:right;
-}
-#description-img{
-    font-size:1.25rem;
-}
-#subtext{
-    font-size: 0.937rem; /* 15px */
-}
+
 
 
 
@@ -251,10 +222,9 @@ body{
     width: 100%;
     max-width: 100%;
     background-image: url(../resources/main/footer-web.png);
-    margin: 50% 0 0 0;
     padding: 1rem 0;
     display:flex;
-    position: relative;
+    position: block;
 }
 
 #nav-footer li{
