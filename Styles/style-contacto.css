@@ -61,6 +61,35 @@ body{
     justify-content: space-between;
     
 }
+#dropdown-options{
+    display: none;
+    position: absolute;
+    padding: 1% 2%;
+    margin: 0 0 0 -2%;
+    background-color: #dfc8e7;
+    border-radius: 3%;
+   
+}
+
+#dropdown-options li{
+    list-style-type: none;
+    padding: 0.5rem;
+    display: block;
+    width:100%;
+}
+#dropdown-options a{
+    color:#fff;
+    text-decoration: none;
+   
+}
+#dropdown-options a:hover{
+    color: #000;
+   
+   
+}
+#dropdown:hover #dropdown-options {
+    display: block; /* muestra la lista al pasar el mouse */
+  }
 
 .pages{
     display: flex;

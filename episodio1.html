@@ -9,6 +9,8 @@
     <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap'); </style>
       <!-- Enlace a la página de estilos de este equipo.html -->
     <link href="Styles/style-pag-pod.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
     <title>Ekc23</title>
 </head>
 <body>
@@ -23,7 +25,11 @@
          <!-- Enlaces de navegación -->
         <div class="pages">
             <ul>
-                <li><a href="index.html">EKC23</a></li>
+                <li id="dropdown"><a rel="EKC" href="index.html">EKC23</a>
+                    <ul id="dropdown-options">
+                        <li><a href="#">EKC22</a></li>
+                    </ul>
+                </li>
                 <li><a href="podcast.html">Podcast</a></li>
                 <li><a href="equipo.html">Equipo</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -39,7 +45,50 @@
                  <h2>Creo que anoche besé a Duchamp</h2>
                  <h4>Vivir a los márgenes de la sociedad se paga caro, si no que le pregunten a Tamara de Lempicka</h4>
             </div>
+            <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+ 
+                <div id="jp_container_1" class="jp-audio">
+                <div class="jp-type-single">
+                
+                    <div class="jp-gui jp-interface">
+
+                        <div class="parte-superior">
+                            <div class="jp-progress">
+                            <div class="jp-seek-bar">
+                                <div class="jp-play-bar"></div>
+                            </div>
+                            </div>
+                    
+                            <div class="jp-time-holder">
+                            <div class="jp-current-time"></div>
+                            </div>
+                    
+                            <div class="jp-volume-bar">
+                            <div class="jp-volume-bar-value"></div>
+                            </div>
+                        </div>
+                
+                        <div class="parte-inferior">
+                            <ul class="jp-controls">
+                            <li><a href="javascript:;" class="jp-30sMinus" tabindex="1"><img src="resources/podcast-player/-30 2.png"></a></li>
+                            <li><a href="javascript:;" class="jp-pastPodcast" tabindex="1"><img src="resources/podcast-player/Botón SIGUIENTE_PANTONE 266C (PNG).png">
+                                                                                           <img src="resources/podcast-player/Botón SIGUIENTE_HOVER.png" class="img-hover"></a></li>
+                            <li><a href="javascript:;" class="jp-play" tabindex="1"><img src="resources/podcast-player/Botón PLAY_PANTONE 266C (PNG).png"></a></li>
+                            <li><a href="javascript:;" class="jp-pause" tabindex="1">&#61516;</a></li>
+                            <li><a href="javascript:;" class="jp-nextPodcast" tabindex="1" ><img src="resources/podcast-player/Botón SIGUIENTE_PANTONE 266C (PNG).png"></a></li>
+                            <li><a href="javascript:;" class="jp-30sPlus" tabindex="1" ><img src="resources/podcast-player/+30 2.png"></a></li>
+                            </ul>
+                        </div>
+                       
+                
+                    <div class="jp-no-solution">
+                    <span>Update Required</span>
+                    To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                    </div>
+                </div>
+                </div>
             
+            </div>
         </div>
          <!-- Descripción del podcast -->
     <div class="descripcion-podcast">
@@ -57,6 +106,8 @@
         
     </div>
 </div>
+</div>
+
             <!-- Fotos de archivo del podcast -->
 
             <div class="titulo-fotos">
@@ -105,6 +156,6 @@
                 </div>
             </div>
             <!-- Enlace de script al javascript de la página -->
-        <script src="./app.js"></script>
+        <script src="js/episodios.js"></script>
     </body>
 </html>

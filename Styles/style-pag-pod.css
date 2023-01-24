@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6{
 }
 a{
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 body{
     width: 100vw;
@@ -162,8 +163,7 @@ body{
 .titulo-podcast{
     flex: 1;
     align-items: flex-start;
-    width: 50%;
-    padding-left: 3%;
+    padding: 0 3%;
 }
 .titulo-podcast h4{
     margin: 0;
@@ -182,6 +182,124 @@ body{
     margin-top: -10px;
  
    
+}
+.jp-jplayer, .jp-audio {
+   
+}
+.jp-gui {
+    position: relative;
+    -webkit-box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, .1);    
+      box-shadow:  0px 1px 1px 0px rgba(0, 0, 0, .1);
+      border-radius: 3px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .parte-superior{
+
+  }
+  .parte-inferior{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6%;
+    justify-content: center;
+  }
+  .jp-controls {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "FontAwesome";
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+ 
+.jp-controls li {
+    display: inline;
+}
+ 
+.jp-controls a {
+    color: #fff;
+}
+
+.jp-controls img{
+    width: 50px;
+    vertical-align: middle;
+    padding:0 10px;
+}
+.jp-play,.jp-pause {
+    width: 60px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-right: 1px solid #9b26b6;
+}
+ 
+.jp-controls .jp-play:hover,.jp-controls .jp-pause:hover {
+    background-color: #9b26b6;
+}
+.jp-controls .jp-pastPodcast {
+    position: relative;
+    display: inline-block;
+}
+.jp-controls .img-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.jp-controls .jp-pastPodcast:hover .img-hover{
+    display:inline;
+  }
+.jp-pastPodcast img{
+    transform: scaleX(-1);
+}
+ .jp-controls .jp-30sPlus img{
+
+ }
+.jp-time-holder {
+    color: #000;
+    font-size: 12px;
+    line-height: 14px;
+    position: absolute;
+    right: 90px;
+    top: 14px;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+.jp-progress {
+    background-color: rgb(180, 177, 177);
+    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
+    position: absolute;
+    right: 133px;
+    top: 15px;
+    width: 70%;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2) inset;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2) inset;
+}
+ 
+.jp-play-bar {
+    height: 12px;
+    background-color: #753BBD;
+    border-radius: 20px 20px 20px 20px;
+}
+ 
+.jp-volume-bar {
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    width: 45px;
+    height: 8px;
+    border-radius: 20px 20px 20px 20px;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1) inset;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1) inset;
+    background-color: rgb(180, 177, 177);
+    overflow: hidden;
+}
+ 
+.jp-volume-bar-value {
+    background-color: #753BBD;
+    height: 8px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 
