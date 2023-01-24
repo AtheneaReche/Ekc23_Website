@@ -1,3 +1,4 @@
+//Menú colapsado para versiones móvil
 var theToggle = document.getElementById('toggle');
 
 
@@ -39,7 +40,7 @@ theToggle.onclick = function() {
    return false;
 }
 
-//dropdown de EKC23
+//dropdown de la barra de navegación EKC23
 const dropdown = document.getElementById("dropdown");
 const options = document.getElementById("dropdown-options");
 
@@ -62,11 +63,9 @@ botonDerecho.addEventListener("click", (event) => {
 
     const spacing = slide[1].offsetLeft - slide[0].offsetLeft;
     currentSlide = (currentSlide +1) % slide.length;
-  
-    //itemsCarroussel.scrollLeft = slide[currentSlide].offsetLeft;
+   
     itemsCarroussel.scrollLeft = currentSlide * spacing;
-      
-  
+    
   });
   botonIzquierdo.addEventListener("click", () => {
 
@@ -74,8 +73,71 @@ botonDerecho.addEventListener("click", (event) => {
     currentSlide = (currentSlide - 1 + slide.length) % slide.length; 
     currentSlide = currentSlide < 0 ? slide.length - 1 : currentSlide;
   
-    //itemsCarroussel.scrollLeft = slide[currentSlide].offsetLeft;
     itemsCarroussel.scrollLeft = currentSlide * spacing;
   
   });
   
+//Prueba carroussel
+const itemsCarousel = document.querySelector(".carousel");
+const cards = document.querySelectorAll(".card");
+const botonIzq = document.getElementById("flecha-izquierda");
+const botonDer = document.getElementById("flecha-derecha");
+let currentCard = 0;
+
+botonDer.addEventListener("click", (event) => {
+
+    const spacing = cards[1].offsetLeft - cards[0].offsetLeft;
+    currentCard = (currentCard +1) % cards.length;
+   
+    itemsCarousel.scrollLeft = currentCard * spacing;
+    
+  });
+  botonIzq.addEventListener("click", () => {
+
+    const spacing = cards[1].offsetLeft - cards[0].offsetLeft;
+    currentCard = (currentCard - 1 + cards.length) % cards.length; 
+    currentCard = currentCard < 0 ? cards.length - 1 : currentCard;
+  
+    itemsCarousel.scrollLeft = currentCard * spacing;
+  
+  });
+/*$(document).ready(function(){
+    $('.carousel').slick({
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      dots:true,
+      centerMode: true,
+      responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          // centerMode: true,
+  
+        }
+  
+      }, {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+          infinite: true,
+  
+        }
+      },  {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      }]
+    });
+  });*/

@@ -27,21 +27,25 @@ h1, h2, h3, h4, h5, h6{
 }
 a{
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 body{
     width: 100vw;
     background-image: url("../resources/main/fondo.png");
     margin:0 auto;
     overflow-x: hidden;
+    height: 100%;
     
 
 }
 
 /* ----2. Navbar---- */
 .logo{
-    float: left;
+   
     padding-top: 0.5rem;
-    margin: 0;
+    margin: 0 1%;
+    max-height: 100px;
+    max-width: 300px;
     
     
 }
@@ -55,21 +59,17 @@ body{
     background-color:#753BBD;
     width: 100vw;
     max-width: 100%;
-    
     display: flex;
-    padding: 0.2rem 2rem;
     position: fixed;
     top:0;
     justify-content: space-between;
-    overflow-x: hidden;
-    overflow-y: hidden;
+   
     
 }
 
 .pages{
     display: flex;
     align-items: flex-start;
-    margin-left: auto;
     margin-right: 1.5rem; 
   
 }
@@ -96,17 +96,74 @@ body{
     flex: 1;
     align-items: flex-start;
     width: 50%;
+    padding-left: 3%;
+    padding-top: 120px;
+    padding-bottom: 20px;
 }
 .title h1{
-    margin: 50%; /* Esto está modificado al bulto porque como no hay contenido en la página el
-                    footer se come la barra de navegación y queda inutilizada */
     font-size: 7rem; /* 112px */ 
 }
 
 
+
 /* ----4. Gallery---- */
 
+  .wrapper{
+    width:100%;
+    padding-top: 20px;
+    text-align:center;
+  }
 
+  .carousel{
+    width:90%;
+    margin:0px auto;
+    display: flex ;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+    transition: scroll-left 0.5s ease-in-out;
+
+  }
+  .slick-slide{
+    margin:10px;
+  }
+  .slick-slide img{
+    width:100%;
+  }
+  .slick-prev, .slick-next{
+    background: #000;
+    border-radius: 15px;
+    border-color: transparent;
+  }
+  .card{
+    box-shadow: 1px 1px 15px #ccc;
+    width: 44%;
+    text-align: center;
+    margin: 0 2% 10%;
+    flex: 1 0 400px;
+  }
+  
+  .card-body{
+    background: #fff;
+    width: 100%;
+    vertical-align: top;
+  }
+  .contenido-tarjeta{
+    text-align: left;
+    color: #333;
+    padding: 15px;
+    height: 300px;
+    overflow: auto;
+
+  }
+  .card-text{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .card-header img{
+   width:100%;
+  }
 
 
 /* ----5. Footer---- */
@@ -115,7 +172,6 @@ body{
     max-width: 100%;
     background-image: url(../resources/main/footer-web.png);
     margin: 0 auto;
-    padding: 1rem 0;
     display:flex;
     position: relative;
 }
@@ -143,6 +199,15 @@ body{
     
     
 }
+.redes-podcast{
+    max-width: 100px;
+    width: 100%;
+    white-space: nowrap;
+    padding-left: 3%;
+    margin: 3%;
+   
+}
+
 .redes{
     color: #ffffff;
     max-width: 100px;
@@ -153,7 +218,6 @@ body{
    
    
 }
-
 #instagram{
     width:35%;
     margin-right: 0.5rem;
@@ -182,6 +246,8 @@ body{
 #spotify:hover{
     cursor: pointer;
 }
+
+
 
 /* ----6. Media Queries---- */
 @media only screen and (max-width:1600px){
@@ -230,6 +296,7 @@ body{
    
     .pages li{
         font-size: 1.1rem;
+        padding: 1.8rem 2rem;
     }
 
     .title h1{
