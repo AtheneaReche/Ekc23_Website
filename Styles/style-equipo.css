@@ -27,14 +27,15 @@ h1, h2, h3, h4, h5, h6{
 a{
     font-family: 'Montserrat', sans-serif;
 }
-body{
+body {
     width: 100vw;
     background-image: url("../resources/main/fondo.png");
-    margin:0 auto;
-    overflow-x: hidden;
-    height: 100%;
-    
-
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0 auto;
+    overflow-x: hidden !important;
+    height: 100%
 }
 
 /* ----2. Navbar---- */
@@ -119,23 +120,60 @@ body{
 }
 
 /* ----3. Header---- */
-.title{
+.title {
     flex: 1;
     align-items: flex-start;
-    width: 50%;
+    width: 100%;
     padding-left: 3%;
+    padding-top: 120px;
 }
 .title h1{
-    margin: 50%; /* Esto está modificado al bulto porque como no hay contenido en la página el
-                    footer se come la barra de navegación y queda inutilizada */
     font-size: 7rem; /* 112px */ 
 }
 
 
 /* ----4. Gallery---- */
 
+.creadores {
+    max-width: 100%;
+    display: flex;
+    margin-top: 5%;
+}
+.creadores2 {
+    max-width: 100%;
+    display: flex;
+}
 
+.creadores2 h2 {
+        margin-left: 3rem;
+}
 
+.creadores h2 {
+    margin-left: 3rem;
+}
+
+.fotos-creadores {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+}
+
+.imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5 .imagen-creador6 {
+    width: 16%;
+    margin-bottom: 1%;
+}
+
+#creador1 img, #creador2 img, #creador3 img, #creador4 img, #creador5 img #creador6 img {
+    width: 80%;
+}
+
+#description-img {
+    font-size: 1rem;
+    
+}
 
 /* ----5. Footer---- */
 .footer{
