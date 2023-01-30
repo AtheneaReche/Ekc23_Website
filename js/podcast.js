@@ -59,7 +59,7 @@ const botonIzq = document.getElementById("flecha-izquierda");
 const botonDer = document.getElementById("flecha-derecha");
 let currentCard = 0;
 
-botonDer.addEventListener("click", (event) => {
+botonDer.onclick = ((event) => {
 
     const spacing = cards[1].offsetLeft - cards[0].offsetLeft;
     currentCard = (currentCard +1) % cards.length;
@@ -67,7 +67,7 @@ botonDer.addEventListener("click", (event) => {
     itemsCarousel.scrollLeft = currentCard * spacing;
     
   });
-  botonIzq.addEventListener("click", () => {
+  botonIzq.onclick = (() => {
 
     const spacing = cards[1].offsetLeft - cards[0].offsetLeft;
     currentCard = (currentCard - 1 + cards.length) % cards.length; 

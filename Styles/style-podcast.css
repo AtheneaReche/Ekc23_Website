@@ -32,6 +32,9 @@ a{
 body{
     width: 100vw;
     background-image: url("../resources/main/fondo.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     margin:0 auto;
     overflow-x: hidden;
     height: 100%;
@@ -130,7 +133,7 @@ body{
     padding-bottom: 20px;
 }
 .title h1{
-    font-size: 7rem; /* 112px */ 
+    font-size: 6rem; /* 96px */ 
 }
 
 
@@ -197,6 +200,44 @@ body{
   .card-header img{
    width:100%;
   }
+#spotify-card{
+    max-width: 100px;
+    width: 90%;
+    white-space: nowrap;
+    margin: 3px 125px;
+
+}
+#spotify-card img{
+    width:100%;
+    
+   
+}
+.flecha-der{
+    display: inline-block;
+    width: 10vw;
+    height: 53vw;
+    position: absolute;
+    right: 40px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.flecha-der:hover{
+    background: linear-gradient(to left, rgb(155, 38, 182), transparent);
+    border: none;
+}
+.flecha-izq{
+    display: inline-block;
+    width: 10vw;
+    height: 53vw;
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+}
+.flecha-izq:hover{
+    
+    background: linear-gradient(to right, rgb(155, 38, 182), transparent);
+    border: none;
+}
 
 
 /* ----5. Footer---- */
@@ -328,7 +369,7 @@ body{
 @media all and (min-width:831px) and (max-width:1024px){
    
     .pages li{
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 1.8rem 2rem;
     }
 
@@ -374,7 +415,12 @@ body{
         padding-top: 1rem;
         font-size: 0.9rem; /* px */
     }
-
+    .flecha-der{
+        display: none;
+      }
+      .flecha-izq{
+        display:none;
+      }
 
     #nav-footer li{
        font-size: 0.8rem;
@@ -426,7 +472,12 @@ body{
         padding-top: 1rem;
         font-size: 0.9rem; /* px */
     }
-
+    .flecha-der{
+        display: none;
+      }
+      .flecha-izq{
+        display:none;
+      }
 
     #nav-footer li{
        font-size: 0.8rem;
@@ -460,7 +511,7 @@ body{
         width: 65%;
     }
 }
-@media all and (min-width:480px) and (max-width:612px){
+@media all and (min-width:481px) and (max-width:612px){
     .logo img{
         width: 80%;
     }
@@ -480,7 +531,12 @@ body{
     }
 
   
-
+    .flecha-der{
+        display: none;
+      }
+      .flecha-izq{
+        display:none;
+      }
    
 
     #nav-footer li{
@@ -534,7 +590,12 @@ body{
         padding-top: 1rem;
         font-size: 0.9rem; /* px */
     }
-
+    .flecha-der{
+        display: none;
+      }
+      .flecha-izq{
+        display:none;
+      }
 
 
     #nav-footer li{
@@ -692,7 +753,12 @@ body{
       .nav .on + .pages{
         display: block;
       }
-
+      .flecha-der{
+        display: none;
+      }
+      .flecha-izq{
+        display:none;
+      }
 
     #nav-footer li{
        font-size: 0.8rem;
@@ -857,6 +923,16 @@ body{
         display: block;
       }
 
+      .flecha-der{
+        display: none;
+      }
+      .flecha-izq{
+        display:none;
+      }
+
+      .card{
+
+      }
 
     #nav-footer li{
        font-size: 0.8rem;

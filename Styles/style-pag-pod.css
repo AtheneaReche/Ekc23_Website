@@ -29,6 +29,9 @@ a{
 body{
     width: 100vw;
     background-image: url("../resources/main/fondo.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     margin:0 auto;
     overflow-x: hidden !important;
     height: 100%;
@@ -230,16 +233,13 @@ body{
     display: inline-block;
     text-align: center;
     line-height: 43px;
-    border-right: 1px solid #9b26b6;
+    
 }
  
 .jp-controls .jp-play:hover,.jp-controls .jp-pause:hover {
-    background-color: #9b26b6;
+   /*background-color: #9b26b6; */
 }
-.jp-controls .jp-pastPodcast {
-    position: relative;
-    display: inline-block;
-}
+/* Hover para botones reproductor */
 .jp-controls .img-hover {
     display: none;
     position: absolute;
@@ -247,15 +247,79 @@ body{
     left: 0;
     z-index: 99;
 }
+/* Hover del botón -30s del reproductor de podcast */
+.jp-controls .jp-30sMinus {
+    position: relative;
+    display: inline-block;
+}
+
+.jp-controls .jp-30sMinus:hover .img-hover{
+    display:inline;
+  }
+
+/* Hover del botón Atrás del reproductor de podcast */
+.jp-controls .jp-pastPodcast {
+    position: relative;
+    display: inline-block;
+}
+
 .jp-controls .jp-pastPodcast:hover .img-hover{
     display:inline;
   }
+
 .jp-pastPodcast img{
     transform: scaleX(-1);
 }
- .jp-controls .jp-30sPlus img{
 
- }
+/* Hover del botón Play del reproductor de podcast */
+.jp-controls .jp-play {
+    position: relative;
+    display: inline-block;
+}
+
+.jp-controls .jp-play:hover .img-hover{
+    display:inline;
+  }
+
+.jp-play > .img-hover img{
+    translate: 0 20px;
+}
+
+/* Hover del botón Pause del reproductor de podcast */
+.jp-controls .jp-pause {
+    position: relative;
+    display: inline-block;
+}
+
+.jp-controls .jp-pause:hover .img-hover{
+    display:inline;
+  }
+
+.jp-pause img{
+    
+}
+
+/* Hover del botón Siguiente del reproductor de podcast */
+.jp-controls .jp-nextPodcast {
+    position: relative;
+    display: inline-block;
+}
+
+.jp-controls .jp-nextPodcast:hover .img-hover{
+    display:inline;
+  }
+
+/* Hover del botón +30s del reproductor de podcast */
+.jp-controls .jp-30sPlus {
+    position: relative;
+    display: inline-block;
+}
+
+.jp-controls .jp-30sPlus:hover .img-hover{
+    display:inline;
+  }
+
+
 .jp-time-holder {
     color: #000;
     font-size: 12px;
@@ -332,7 +396,34 @@ body{
     width: 100%;
 }
 
+.creadores{
+    max-width: 100%;
+    display: flex;
+    margin-top: 5%;
+ 
+    
+}
+.creadores h2{
+    margin-left: 2rem;
+}
+.fotos-creadores{
+display: flex;
+margin:0;
+padding: 0;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5  {
+    width:45%;
+    margin-bottom: 4%;
+    
+}
 
+#creador1 img, #creador2 img, #creador3 img, #creador4 img, #creador5 img{
+    width: 100%;
+   
+    
+}
 
 
 /* ----5. Footer---- */
@@ -522,7 +613,45 @@ body{
         padding-top: 1rem;
         font-size: 0.9rem; /* px */
     }
+    /* CONTENIDO PRINCIPAL */
+    .contenido-principal{
+        padding-top: 1.9rem;
+      }
+    .descripcion-podcast h4 {
+        padding: 6% 3%;
+      }
+      .parte-inferior {
+        padding: 0 6%;
+      }
+      .jp-controls{
+        margin-top: 15%;
+      }
+      .jp-progress{
+        right: 114px;
+        width: 67%;
+      }
+      .jp-time-holder{
+      right: 72px;
+      }
 
+      .jp-controls .jp-pastPodcast {
+        right:2%;
+      }
+      .jp-controls .jp-play {
+        right:1%;
+      }
+      .jp-controls .jp-pause {
+        right:1%;
+      }
+
+      .jp-controls .jp-nextPodcast {
+        left:2%;
+      }
+      .jp-controls .jp-30sPlus {
+        left: 79%;
+        bottom: 49%;
+      }
+      
     .carroussel{
         margin:5% 0 20% 10%;
         width: 80vw;
@@ -629,7 +758,7 @@ body{
         width: 65%;
     }
 }
-@media all and (min-width:480px) and (max-width:612px){
+@media all and (min-width:530px) and (max-width:612px){
     
     .logo img{
         width: 80%;
@@ -708,17 +837,62 @@ body{
         margin-top: 70px;
     }
  
-
+    .pages{
+        margin-right: 0;
+    }
     .pages li{
-        padding: 0rem 1rem;
+        padding: 0rem 0.3rem;
         padding-top: 1rem;
         font-size: 0.9rem; /* px */
     }
+    /* CONTENIDO PRINCIPAL */
+    .contenido-principal{
+        margin-top: 3.5rem;
+        flex-direction: column;
+      }
+      .text-container {
+        
+        width: 100%;
+      }
+      .descripcion-podcast {
+        width: 100%;
+      }
+      .descripcion-podcast h4 {
+        padding: 6% 3% ;
+      }
+      .parte-inferior {
+        padding: 0 6%;
+      }
+      .jp-controls{
+        margin-top: 15%;
+        margin-bottom: 10%;
+      }
+      .jp-progress{
+        right: 114px;
+        width: 67%;
+      }
+      .jp-time-holder{
+      right: 72px;
+      }
 
-    .carroussel{
-        margin:5% 0 20% 15%;
-        width: 80vw;
-    }
+      .jp-controls .jp-pastPodcast {
+        right: 2%;
+      }
+      .jp-controls .jp-play {
+        right: 1%;
+      }
+      .jp-controls .jp-pause {
+        right: 1%;
+      }
+
+      .jp-controls .jp-nextPodcast {
+        left: 3%;
+      }
+      .jp-controls .jp-30sPlus {
+       
+      }
+
+   
     #contenido1 {
         display: block;
         width: 50%;
@@ -764,16 +938,77 @@ body{
         width: 65%;
     }
 }
-@media all and (max-width:480px){
+@media all and (max-width:485px){
 
     .logo img{
         width: 70%;
     }  
-    .contenido-principal{
-        flex-direction: column-reverse;
-        width: auto;
-        padding-top: 0;
-        margin-top: 30%;
+   
+      /* CONTENIDO PRINCIPAL */
+      .contenido-principal{
+        flex-direction: column;
+        padding-top: 1.2rem;;
+      }
+      
+      .parte-inferior {
+        padding: 0 6%;
+      }
+      .jp-controls{
+        margin-top: 15%;
+      }
+      .jp-progress{
+        right: 114px;
+        width: 67%;
+      }
+      .jp-time-holder{
+      right: 72px;
+      }
+
+      .jp-controls .jp-pastPodcast {
+        right: 4%;
+      }
+      .jp-controls .jp-play {
+        right: 5%;
+      }
+      .jp-controls .jp-pause {
+        right: 5%;
+      }
+
+      .jp-controls .jp-nextPodcast {
+        right: 4%;
+      }
+      .jp-controls .jp-30sPlus {
+        left: 79%;
+        bottom: 49%;
+      }
+      
+
+
+      .descripcion-podcast {
+        width: 100%;
+      }
+      .descripcion-podcast h4{
+        margin-top: 1%;
+      }
+
+      /* FOTOS DE ARCHIVO */
+      .imagenes {
+        flex-direction: column;
+        padding: 0 10%;
+      }
+      #imagen1, #imagen2, #imagen3, #imagen4{
+        width:100%;
+      }
+
+      /* CREADORES PODCAST */
+      .fotos-creadores{
+        flex-direction: column;
+        padding: 0 10%;
+      }
+      .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5  {
+        width:100%;
+        margin-bottom: 4%;
+        
     }
     .text-container{
         max-width: 100%;
@@ -962,7 +1197,7 @@ body{
         width: 65%;
     }
 }
-@media all and (max-width:380px){
+@media all and (max-width:385px){
     .logo{
         width:60%;
     }
@@ -1088,6 +1323,73 @@ body{
       .nav .on + .pages{
         display: block;
       }
+
+      /* CONTENIDO PRINCIPAL */
+      .contenido-principal{
+        flex-direction: column;
+        margin-top: 18%;
+      }
+      .parte-inferior {
+        padding: 0 6%;
+      }
+      .jp-controls{
+        margin-top: 15%;
+      }
+      .jp-progress{
+        right: 114px;
+        width: 67%;
+      }
+      .jp-time-holder{
+      right: 72px;
+      }
+
+      .jp-controls .jp-pastPodcast {
+        right: 8%;
+      }
+      .jp-controls .jp-play {
+      right: 11%;
+      }
+      .jp-controls .jp-pause {
+        right: 11%;
+      }
+
+      .jp-controls .jp-nextPodcast {
+        right: 11%;
+      }
+      .jp-controls .jp-30sPlus {
+        left: 79%;
+        bottom: 49%;
+      }
+      
+
+
+      .descripcion-podcast {
+        width: 100%;
+      }
+      .descripcion-podcast h4{
+        margin-top: 1%;
+      }
+
+      /* FOTOS DE ARCHIVO */
+      .imagenes {
+        flex-direction: column;
+        padding: 0 10%;
+      }
+      #imagen1, #imagen2, #imagen3, #imagen4{
+        width:100%;
+      }
+
+      /* CREADORES PODCAST */
+      .fotos-creadores{
+        flex-direction: column;
+        padding: 0 10%;
+      }
+      .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5  {
+        width:100%;
+        margin-bottom: 4%;
+        
+    }
+
 
     .carroussel{
         margin:5% 0 20% 20%;
