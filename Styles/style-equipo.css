@@ -18,8 +18,11 @@
 
 
 /* ----1. General---- */
-p{
+p {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-right: 19%;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Noto Sans', sans-serif;
@@ -156,7 +159,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin-left: 5rem;
 }
@@ -169,11 +172,7 @@ body {
 #creador1 img, #creador2 img, #creador3 img, #creador4 img, #creador5 img #creador6 img {
     width: 80%;
 }
-
-#description-img {
-    font-size: 1rem;
-    
-}
+  
 
 /* ----5. Footer---- */
 .footer{
