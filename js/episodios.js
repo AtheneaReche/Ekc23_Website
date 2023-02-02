@@ -64,3 +64,24 @@ $(document).ready(function(){
       supplied: "mp3"
     });
   });
+  
+  const forwardAudio = () =>{
+    const player = document.getElementsByClassName(".jp-30sPlus");
+  }
+
+  //imagen que se hace grande al hacer click
+  const modal = document.querySelector('.modal');
+  const previews = document.querySelectorAll('.imagenes img');
+  const full = document.querySelector('.full-image');
+
+  previews.forEach((preview) => {
+    preview.addEventListener('click', () => {
+      modal.classList.add('open');
+      full.classList.add('open');
+    });
+  });
+  modal.addEventListener('click', (e) =>{
+    if(e.target.classList.contains('modal')){
+      modal.classList.remove('open');
+    }
+  });

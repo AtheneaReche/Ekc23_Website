@@ -66,6 +66,7 @@ body{
     position: fixed;
     top:0;
     justify-content: space-between;
+    z-index:99;
    
     
 }
@@ -205,33 +206,40 @@ body{
     width: 90%;
     white-space: nowrap;
     margin: 3px 125px;
+    z-index: 98;
+    position: relative;
 
 }
 #spotify-card img{
     width:100%;
+    
     
    
 }
 .flecha-der{
     display: inline-block;
     width: 10vw;
-    height: 53vw;
+    height: 43vw;
     position: absolute;
     right: 40px;
     background-color: transparent;
     border-color: transparent;
+    margin: 0 1.8%;
 }
 .flecha-der:hover{
     background: linear-gradient(to left, rgb(155, 38, 182), transparent);
     border: none;
 }
 .flecha-izq{
-    display: inline-block;
+    display: flex;
     width: 10vw;
-    height: 53vw;
+    height: 43vw;
     position: absolute;
     background-color: transparent;
     border-color: transparent;
+    margin: 0 1.8%;
+    /*margin: 0 1.8% 10%;
+    flex: 1 0 400px;*/
 }
 .flecha-izq:hover{
     
@@ -295,6 +303,8 @@ body{
 #instagram{
     width:35%;
     margin-right: 0.5rem;
+    z-index: 98;
+    position: relative;
 }
 #instagram:hover{
     cursor: pointer;
@@ -302,6 +312,8 @@ body{
 
 #twitter{
     width:35%;
+    z-index: 98;
+    position: relative;
 }
 #twitter:hover{
     cursor: pointer;
@@ -309,6 +321,8 @@ body{
 
 #tiktok{
     width:40%;
+    z-index: 98;
+    position: relative;
 }
 #tiktok:hover{
     cursor: pointer;
@@ -316,6 +330,9 @@ body{
 
 #spotify{
     width:90%;
+    z-index: 98;
+    position: relative;
+
 }
 #spotify:hover{
     cursor: pointer;

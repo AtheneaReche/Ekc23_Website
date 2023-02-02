@@ -29,6 +29,9 @@ a{
 body{
     width: 100vw;
     background-image: url("../resources/main/fondo.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     margin:0 auto;
     overflow-x: hidden;
     height: 100%;
