@@ -65,9 +65,41 @@ $(document).ready(function(){
     });
   });
   
-  const forwardAudio = () =>{
-    const player = document.getElementsByClassName(".jp-30sPlus");
+
+  const forward30 = ()=>{
+    // Fast forwards the audio file by 30 seconds. function forwardAudio() {// Check for audio element support.
+    if (window.HTMLAudioElement) {
+      try {
+        var oAudio = document.querySelector("audio");
+        oAudio.currentTime += 30.0;
+      }
+      catch (e) {
+        // Fail silently but show in F12 developer tools console
+        if(window.console && console.error("Error:" + e));
+      }
+    }
   }
+  
+  const backward30 = ()=>{
+    // Fast forwards the audio file by 30 seconds. function forwardAudio() {// Check for audio element support.
+    if (window.HTMLAudioElement) {
+      try {
+        var oAudio = document.querySelector("audio");
+        oAudio.currentTime -= 30.0;
+      }
+      catch (e) {
+        // Fail silently but show in F12 developer tools console
+        if(window.console && console.error("Error:" + e));
+      }
+    }
+  }
+  
+  const forwardButton = document.querySelector(".jp-30sPlus");
+  forwardButton.addEventListener('click', forward30);
+  const backwardButton = document.querySelector(".jp-30sMinus");
+  backwardButton.addEventListener('click', backward30);
+
+
 
   //imagen que se hace grande al hacer click
   const modal = document.querySelector('.modal');
@@ -85,3 +117,4 @@ $(document).ready(function(){
       modal.classList.remove('open');
     }
   });
+
