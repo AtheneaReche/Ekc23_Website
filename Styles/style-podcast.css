@@ -827,6 +827,9 @@ body{
         max-width: 100%;
         width: 100vw;
     }
+    .title{
+        padding-top: 0;
+    }
 
     .title h1{
         font-size: 2rem;
@@ -948,7 +951,18 @@ body{
       }
 
       .card{
-
+        flex: 1 0 200px;
+      }
+      .card-title h2{
+        
+      }
+      .contenido-tarjeta {
+        height: 151px;
+        overflow: auto;
+      }
+      #spotify-card {
+        width: 60%;
+        margin: 3px 25px;
       }
 
     #nav-footer li{
