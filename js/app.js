@@ -1,4 +1,7 @@
 
+// reset a gif in javascript
+const img = document.getElementById("hero");
+img.src = "resources/main/Conhuellas Fondo blanco.gif"+"?a="+Math.random();
 
 //dropdown de la barra de navegación EKC23
 const dropdown = document.getElementById("dropdown");
