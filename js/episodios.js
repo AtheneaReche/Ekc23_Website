@@ -1,4 +1,4 @@
-//Menú colapsado para versiones móvil
+/*Menú colapsado para versiones móvil
 var theToggle = document.getElementById('toggle');
 
 
@@ -39,7 +39,7 @@ theToggle.onclick = function() {
    toggleClass(this, 'on');
    return false;
 }
-
+*/
 //dropdown de la barra de navegación EKC23
 const dropdown = document.getElementById("dropdown");
 const options = document.getElementById("dropdown-options");
@@ -57,7 +57,7 @@ $(document).ready(function(){
     $("#jquery_jplayer_1").jPlayer({
       ready: function () {
         $(this).jPlayer("setMedia", {
-          mp3: "resources/imagenes-podcast1/DEMO EKC.mp3"
+          mp3: "resources/imagenes-podcast1/Creo que anoche besé a Duchamp.mp3"
         });
       },
       swfPath: "/js",
@@ -110,11 +110,14 @@ $(document).ready(function(){
     preview.addEventListener('click', () => {
       modal.classList.add('open');
       full.classList.add('open');
+        const originalSrc = preview.getAttribute('src');
+        full.src = originalSrc;
     });
   });
   modal.addEventListener('click', (e) =>{
-    if(e.target.classList.contains('modal')){
+   // if(e.target.classList.contains('modal')){
       modal.classList.remove('open');
-    }
+      //full.classList.remove("open");
+   // }
   });
 

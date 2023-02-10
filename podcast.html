@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="/resources/main/favicon.png" />
     <!-- Enlace a la página de estilos de este podcast.html -->
     <link href="Styles/style-podcast.css" rel="stylesheet" type="text/css">
+    <link href="Styles/navbar-mobile.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" rel="stylesheet" type="text/css">
     
@@ -23,20 +24,29 @@
         </div>
         <!-- Enlace a la navegación encapsulada que realiza un desplagable en 
             dispositivos menores de 480px -->
-        <a href="#pages" id="toggle"><span></span></a>
-         <!-- Enlaces de navegación -->
-        <div class="pages">
-            <ul>
-                <li id="dropdown"><a rel="EKC" href="index.html">EKC23</a>
-                    <ul id="dropdown-options">
-                        <li><a href="#">EKC22</a></li>
-                    </ul>
-                </li>
-                <li><a href="podcast.html">Podcast</a></li>
-                <li><a href="equipo.html">Equipo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </div>
+            <nav>
+              <div class="pages">
+                <div class="container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                      <span class="line line1"></span>
+                      <span class="line line2"></span>
+                      <span class="line line3"></span>
+                    </div>  
+                 
+                  <div class="menu-items">
+                      <li id="dropdown"><a rel="EKC" href="index.html">EKC23</a>
+                          <ul id="dropdown-options">
+                              <li><a href="#">EKC22</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="podcast.html">Podcast</a></li>
+                      <li><a href="equipo.html">Equipo</a></li>
+                      <li><a href="contacto.html">Contacto</a></li>
+                  </div>
+                </div>
+              </div>
+            </nav>
     </div>
     <!-- Contenido Principal de la Página -->
     <div class="contenido-principal">
@@ -130,8 +140,8 @@
                         <div class="card-body">
                             <div class="contenido-tarjeta">
                                 <h5>Temporada 1 / Episodio 3</h5>
-                              <div class="card-title"><h2>El culto invisible a la Bauhaus</h2></div>
-                              <br>
+                              <div class="card-title"><h2>El culto invisible a la <br> Bauhaus</h2></div>
+                              
                               <h4>Los secretos de Paul Klee</h4>
                               <div class="card-text">
                                <!-- <p>En 1923 surge un grupo secreto de la emblemática escuela de diseño, 

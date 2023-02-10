@@ -9,6 +9,7 @@
     <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap'); </style>
       <!-- Enlace a la página de estilos de este equipo.html -->
     <link href="Styles/style-pag-pod.css" rel="stylesheet" type="text/css">
+    <link href="Styles/navbar-mobile.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
     <title>Ekc23</title>
@@ -21,8 +22,8 @@
         </div>
         <!-- Enlace a la navegación encapsulada que realiza un desplagable en 
             dispositivos menores de 480px -->
-        <a href="#pages" id="toggle"><span></span></a>
-         <!-- Enlaces de navegación -->
+      <!--  <a href="#pages" id="toggle"><span></span></a> 
+         Enlaces de navegación 
         <div class="pages">
             <ul>
                 <li id="dropdown"><a rel="EKC" href="index.html">EKC23</a>
@@ -35,6 +36,30 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
+    -->
+    <nav>
+        <div class="pages">
+          <div class="container nav-container">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>  
+           
+            <div class="menu-items">
+                <li id="dropdown"><a rel="EKC" href="index.html">EKC23</a>
+                    <ul id="dropdown-options">
+                        <li><a href="#">EKC22</a></li>
+                    </ul>
+                </li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
      <!-- Contenido Principal de la Página -->
      <div class="contenido-principal">
@@ -128,32 +153,36 @@
                <div class="imagenes">
                 <div id="imagen1">
                     <div id ="imagen-inner">
-                        <img src="resources/imagenes-podcast1/carta adaptada web.png" alt="foto1">
+                        <img src="resources/imagenes-podcast1/IMG_6554.JPG" alt="foto1">
+                    </div>
+                    <p id="description-img-false">Texto principal</p>
+                </div>
+                
+           
+               <div id="imagen2">
+                    <div id ="imagen-inner">
+                        <img src="./resources/imagenes-podcast1/IMG_6539.JPG" alt="foto2">
+                    </div>
+                    <p id="description-img-false">Texto principal</p>
+                </div>
+               
+
+                  <div id="imagen3">
+                    <div id ="imagen-inner">
+                        <img src="./resources/imagenes-podcast1/IMG_6530.JPG" alt="foto3">
+                    </div>
+                    <p id="description-img-false">Texto principal</p>
+                </div>
+               
+                <div id="imagen4">
+                    <div id ="imagen-inner">
+                        <img src="./resources/imagenes-podcast1/carta adaptada web.png" alt="foto4">
                     </div>
                     <p id="description-img-false">Carta</p>
                 </div>
                 <div class="modal">
                     <img src="./resources/imagenes-podcast1/carta adaptada web.png" alt="" class="full-image">
                 </div>
-           
-               <!--  <div id="imagen2">
-                    <div id ="imagen-inner">
-                        <img src="./resources/imagenes-podcast1/carta adaptada web.png" alt="foto2">
-                    </div>
-                    <p id="description-img">Texto principal</p>
-                </div>
-                <div class="modal">
-                    <img src="./resources/imagenes-podcast1/carta adaptada web.png" alt="" class="full-image">
-                </div>
-
-                  <div id="imagen3">
-                    <img src="#" alt="foto3">
-                    <p id="description-img">Texto principal</p>
-                </div>
-                <div id="imagen4">
-                    <img src="#" alt="foto4">
-                    <p id="description-img">Texto principal</p>
-                </div>-->
             </div>
 
             <div class="creadores">
@@ -162,13 +191,13 @@
                 <div class="fotos-creadores">
                     <div class="imagen-creador1">
                         <div id="creador1">
-                            <img src="resources/imagenes-podcast1/carta adaptada web.png" alt="foto1">
+                            <img src="resources/imagenes-podcast1/MIGUELGD.jpg" alt="foto1">
                             <p id="description-img">Miguel García Díaz</p>
                         </div>
                     </div>
                     <div class="imagen-creador2">
                         <div id="creador2">
-                            <img src="resources/imagenes-podcast1/carta adaptada web.png" alt="foto1">
+                            <img src="resources/imagenes-podcast1/ELENARU.jpg" alt="foto1">
                             <p id="description-img">Elena Rueda Castro</p>
                         </div>
                     </div>
@@ -186,7 +215,7 @@
                     </div>
                     <div class="imagen-creador5">
                         <div id="creador5">
-                            <img src="resources/imagenes-podcast1/carta adaptada web.png" alt="foto1">
+                            <img src="resources/imagenes-podcast1/AndreaMªPA.jpg" alt="foto1">
                             <p id="description-img">Andrea María Pagnozza Arenas</p>
                         </div>
                     </div>
