@@ -99,13 +99,13 @@
       .pages .menu-items {
         padding-top: 77px;
         background-color: rgba(117, 59, 189, 0.9);
-        height: 100vh;
+        height: 34vh;
         width: 100%;
         transform: translate(150%);
         display: flex;
         flex-direction: column;
-        margin-left: -40px;
-        padding-left: 30px;
+        /*margin-left: -49px;*/
+        padding-left: 6px;
         padding-right: 30px;
       
         transition: transform 0.5s ease-in-out;
@@ -135,10 +135,8 @@
         transform: rotate(-45deg);
       }
 }
-
-
-@media all and (max-width:385px){
-.container {
+@media all and (max-width:480px){
+  .container {
     max-width: 1050px;
     width: 90%;
     margin: auto;
@@ -147,6 +145,8 @@
   .pages {
     width: 100%;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    top:0;
+    margin-right: 3.5rem;
   }
   
   .nav-container {
@@ -188,7 +188,7 @@
     height: 32px;
     width: 32px;
     top: 20px;
-    left: 68px;
+    left: 111px;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
@@ -199,8 +199,8 @@
     height: 26px;
     width: 32px;
     position: absolute;
-    top: 20px;
-    left: 74px;
+    top: 28px;
+    left: 114px;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -232,12 +232,144 @@
   .pages .menu-items {
     padding-top: 77px;
     background-color: rgba(117, 59, 189, 0.9);
-    height: 100vh;
+    height: 40vh;
     width: 100%;
     transform: translate(150%);
     display: flex;
     flex-direction: column;
-    margin-left: -40px;
+    margin-left: -49px;
+    padding-left: 6px;
+    padding-right: 30px;
+  
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+  }
+  
+  .pages .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+}
+
+@media all and (max-width:385px){
+.container {
+    max-width: 1050px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .pages {
+    width: 100%;
+    
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+  }
+  
+  .pages .menu-items {
+    display: flex;
+  }
+  
+  .pages .nav-container li {
+    list-style: none;
+  }
+  
+  .pages .nav-container a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+  
+  .pages .nav-container a:hover{
+      font-weight: bolder;
+  }
+  
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  
+  .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 127px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 20px;
+    left: 134px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .pages .menu-items {
+    padding-top: 77px;
+    background-color: rgba(117, 59, 189, 0.9);
+    height: 52vh;
+    width: 100%;
+    transform: translate(150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -28px;
     padding-left: 3px;
     padding-right: 8px;
   

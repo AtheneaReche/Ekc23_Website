@@ -147,6 +147,7 @@ body{
     border-width:thin;
     border-color: rgb(187, 187, 187);
     border-style: solid;
+    padding: 0 67px;
     
 }
 .descripcion-podcast h4{
@@ -169,6 +170,7 @@ body{
     flex: 1;
     align-items: flex-start;
     padding: 0 3%;
+    margin-left: 94px;
 }
 .titulo-podcast h4{
     margin: 0;
@@ -336,7 +338,7 @@ body{
     border-radius: 20px 20px 20px 20px;
     overflow: hidden;
     position: absolute;
-    right: 133px;
+    right: 146px;
     top: 15px;
     width: 70%;
     -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2) inset;
@@ -351,7 +353,7 @@ body{
  
 .jp-volume-bar {
     position: absolute;
-    right: 10px;
+    right: 21px;
     top: 17px;
     width: 45px;
     height: 8px;
@@ -378,12 +380,12 @@ body{
     
 }
 .titulo-fotos h2{
-    margin-left: 2rem;
+    margin-left: 7rem;
 }
 
 .imagenes{
     display: flex;
-    margin:0;
+    margin: 0 67px;
     padding: 0;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -451,14 +453,14 @@ body{
     
 }
 .creadores h2{
-    margin-left: 2rem;
+    margin-left: 7rem;
 }
 .fotos-creadores{
-margin:0;
-padding: 0;
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-gap: 1rem;
+    margin: 0 97px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
 }
 
 .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5  {
@@ -570,6 +572,15 @@ gap: 1rem;
  
     .hero img{
         padding: 2.5rem 2.5rem;
+    }
+    .jp-progress{
+      width: 64%;
+    }
+    .imagenes{
+      margin: 0 78px;
+    }
+    .fotos-creadores{
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
     .info{
         margin-left: 10%;
@@ -1142,7 +1153,7 @@ gap: 1rem;
 @media all and (max-width:481px){
 
    .logo{
-    min-width: 200px;
+    min-width: 224px;
    }
 
     .logo img{
