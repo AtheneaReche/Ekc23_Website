@@ -12,6 +12,33 @@
     <link href="Styles/style-contacto.css" rel="stylesheet" type="text/css">
     <link href="Styles/navbar-mobile.css" rel="stylesheet" type="text/css">
     <title>Ekc23</title>
+    
+<!-- CSS media query within a style sheet -->
+<style>
+    @media screen and (max-width:1024px){
+      div.correo {padding-top:30px;padding-left:10px;padding-bottom:180px;padding-right:10px;align-items: flex-start;}
+      img.responsive {width: 280px;margin: 10px 65px 0 0;float:right;}
+      p.habla {font-size:32px;}
+      div.formula {width:90%;}
+      input.inputfuente {font-size:17px;}
+      textarea.inputfuente {font-size:16px;}
+      input.boton {background:#763ABE;color:white;height:64px;width:90%;text-align:center;font-size:17px;}
+    }
+    
+    @media screen and (min-width:1025px){
+      div.correo {padding-top:130px;padding-left:60px;padding-bottom:180px;padding-right:60px;align-items: flex-start;}
+      img.responsive{width: 600px;margin: 130px 15px 0 0;float:right;}
+      p.habla {font-size:48px;}
+      div.formula {width:50%;}
+      input.inputfuente {font-size:24px;}
+      textarea.inputfuente {font-size:20px;}
+      input.boton {background:#763ABE;color:white;height:64px;width:50%;text-align:center;font-size:20px;}
+    }
+    
+    img.responsive{height: auto;}
+    div.formula{height:auto;}
+    div.correo{height:auto;}
+    </style>
 </head>
 <body>
      <!-- Navbar -->
@@ -48,32 +75,28 @@
      <!-- Contenido Principal de la Página -->
     <div class="contenido-principal">
         <div class="text-container">
-            <div style="padding-top:130px;padding-left:60px;padding-bottom:180px;padding-right:60px;">
-                <div style="float:left; width:40%;padding-bottom:180px;">
-                    <p style="font-size:48px;">¡Hablemos!</p>
+            <div class="correo">
+                <div style="width:100%;padding-bottom:180px;align-items: flex-start;display: inline;">      
+                    <div class="imagen">
+                        <img src="resources/contacto/opcion 4.png" class="responsive">
+                    </div>
+                    <p style="font-size:48px;" class="habla">¡Hablemos!</p>
                     <p style="font-size:28px;">Escríbenos un mensaje y nuestro equipo te<br>responderá lo más rápido posible</p>
-                    <form action="mailto:info@ekcuma.es" method="post" enctype="text/plain">
-                        <p>Nombre</p>
-                        <input type="text" id="name" name="name"><br><br>
-                        <p>Correo electrónico</p>
-                        <input type="email" id="email" name="email"><br><br>
-                        <p>Mensaje</p>
-                        <textarea id="message" name="message"></textarea><br><br>
-                        <input type="submit" value="Enviar Mensaje" style="background:#763ABE;color:white;height:64px;width:50%;text-align:center;">  
-                        <input type=hidden id="subject" name="subject" value="Correo desde web EKC">
-                    </form>
+                    <div class="formula">
+                        <form action="contacto.php" method="post" name="formulario">
+                            <p>Nombre</p>
+                            <input type="text" id="name" name="name" class="inputfuente"><br><br>
+                            <p>Correo electrónico</p>
+                            <input type="email" id="email" name="email" class="inputfuente"><br><br>
+                            <p>Mensaje</p>
+                            <textarea id="message" name="message" class="inputfuente"></textarea><br><br>
+                            <input type="submit" value="Enviar Mensaje" class="boton"> 
+                        </form>
+                    </div>    
                 </div>
-
-                <div style="width:20%;display:inline-block;"></div>
-
-                <div style="float:right; width:40%;">
-                    <img src="resources/contacto/opcion 4.png" alt="Contacto">
-                </div>
-                
-            </div>    
-        </div>
+            </div>
+        </div>    
     </div>
-
 
              <!-- Footer -->
              <div class="footer">
@@ -100,4 +123,18 @@
             <!-- Enlace de script al javascript de la página -->
         <script src="js/contacto.js"></script>
     </body>
+    <!-- Validación de los campos antes del envío de correos -->
+    <script>
+        function valida_envia() {
+            var nam = document.formulario.name.value;
+            var ema = document.formulario.email.value;
+            var mes = document.formulario.message.value;
+            if(nam=='' || ema=='' || mes=='') {
+                alert("Por favor, rellena todos los campos...");
+                return 0;
+            } else {
+                document.formulario.submit();
+            }   
+        }
+    </script>
 </html>

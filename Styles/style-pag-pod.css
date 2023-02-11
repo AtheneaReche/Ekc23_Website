@@ -395,7 +395,7 @@ body{
 }
 #imagen1, #imagen2, #imagen3, #imagen4{
     
-    width: 45%;
+    width: 37%;
     margin-bottom: 4%;
     
 }
@@ -437,12 +437,14 @@ body{
 
 .full-image{
   position: absolute;
-  width: 80%;
+  max-width: 80%;
+  max-height: 80%;
   height: auto;
   top:55%;
   left:50%;
   transform: translate(-50%, -50%) scale(0.5);
   transition: all 0.25s ease-out;
+
 
 }
 .full-image.open{
