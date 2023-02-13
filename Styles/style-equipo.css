@@ -206,13 +206,21 @@ body {
 .info{
     color: #ffffff;
     text-align: center;
-    margin:0 auto;
-    margin-left: 20%;
-    padding-top: 2.7rem;
+     /* margin:0 auto; */
+    /*margin-left: 7%;*/
+    padding-top: 87px;
+    max-width: 73%;
 
-    
-    
 }
+.info p{
+    margin:0;
+}
+#logos{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    max-height: 50%;
+  }
 .redes{
     color: #ffffff;
     max-width: 100px;
@@ -684,12 +692,12 @@ body {
 }
 @media all and (max-width:380px){
     .logo{
-        width:60%;
-        min-width: 223px;
+        padding-top: 0;
     }
     
     .logo img{
         width: 70%;
+        min-width: 223px;
     }  
     .contenido-principal{
         flex-direction: column-reverse;

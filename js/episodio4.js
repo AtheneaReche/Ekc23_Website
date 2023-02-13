@@ -16,7 +16,7 @@ $(document).ready(function(){
     $("#jquery_jplayer_1").jPlayer({
       ready: function () {
         $(this).jPlayer("setMedia", {
-          mp3: "resources/podcast4/Cadáver encontrado en el MOMA_mezcla.mp3"
+          mp3: "resources/podcast4/SIN ECOCadaver encontrado en el MOMA_mezcla.mp3"
         });
       },
       swfPath: "/js",

@@ -156,9 +156,13 @@ body{
     width: 50%;
     padding-left: 3%;
 }
-.title h1{
+
+
+.title h1, focus-in {
+    color: #753BBD; 
     margin: 0 0 0 86px;
     font-size: 6rem;
+    animation: focus-in 1s;
 }
 #subtitle {
     width: 50%;
@@ -169,11 +173,12 @@ body{
  
    
 }
-.description p{
+.description p, focus-in{
     font-size: 1.5rem; /* 24px */
     order: 2;
     padding-left: 3%;
     margin: 0 0 0 86px;
+    animation: focus-in 1.5s;
 }
 
 
@@ -281,12 +286,11 @@ body{
 .info{
     color: #ffffff;
     text-align: center;
-    margin:0 auto;
-    margin-left: 20%;
-    padding-top: 2.7rem;
+   /* margin:0 auto; */
+    /*margin-left: 7%;*/
+    padding-top: 68px;
+    max-width: 73%;
 
-    
-    
 }
 .redes{
     color: #ffffff;
@@ -298,6 +302,13 @@ body{
    
    
 }
+#logos{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    max-height: 50%;
+  }
+
 
 #instagram{
     width:35%;
@@ -353,7 +364,10 @@ body{
        /* padding: 2.5rem 2.5rem; */
     }
     .info{
-        margin-left: 10%;
+        margin-left: 0;
+    }
+    .redes p{
+        margin: 12px;
     }
 }
 @media all and (min-width:1024px) and (max-width:1280px){
@@ -396,6 +410,7 @@ body{
 
     .info{
         margin-left: 0;
+        padding-top: 113px;
         
     }
 }
@@ -430,9 +445,10 @@ body{
         padding: 0 40px 0 0;
       }
     .info{
-        font-size: 0.6rem;
-        padding-top: 10%;
-        margin-left: 1%;
+        font-size: 15px;
+        padding-top: 15%;
+        margin-left: -14%;
+        max-width: 85%;
     }
 
     #instagram{
@@ -509,7 +525,7 @@ body{
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
+        padding-top: 1%;
         margin-left: 12%;
     }
     .footer{
@@ -875,8 +891,8 @@ body{
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 1%;
+        padding-top: 1%;
+        margin-left: 15%;
     }
     .footer{
         flex-direction: column;
@@ -918,7 +934,7 @@ body{
     }
 
     .title h1{
-        font-size: 1.4rem;
+        font-size: 32px;
         margin-top: 5px;
         margin-left: 71px;
     }
@@ -935,7 +951,9 @@ body{
        padding-left: 11%;
        padding-top: 16px;
     }
-   
+    #novedades h2{
+        font-size: 1.5rem;
+   }
 
     .carroussel{
         margin:5% 0 20% 20%;
@@ -973,14 +991,18 @@ body{
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 1%;
+        padding-top: 1%;
+        margin-left: 15%;
+    }
+    .redes p{
+        margin: 15% 0;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+        margin-right: 17px;
     }
 
     #instagram{
@@ -996,3 +1018,15 @@ body{
         width: 65%;
     }
 }
+
+ @keyframes focus-in{
+    0%{
+        filter: blur(12px);
+        opacity:0;
+    }
+    100%{
+        filter: blur(0px);
+        opacity:1;
+    }
+ }
+  

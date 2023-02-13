@@ -16,7 +16,7 @@ $(document).ready(function(){
     $("#jquery_jplayer_1").jPlayer({
       ready: function () {
         $(this).jPlayer("setMedia", {
-          mp3: "resources/podcast7/VERSIÓN FINAL podcast 7_mezcla.mp3"
+          mp3: "resources/podcast7/VERSION FINAL podcast 7_mezcla.mp3"
         });
       },
       swfPath: "/js",

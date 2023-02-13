@@ -16,7 +16,7 @@ $(document).ready(function(){
     $("#jquery_jplayer_1").jPlayer({
       ready: function () {
         $(this).jPlayer("setMedia", {
-          mp3: "resources/podcast1/Creo que anoche besé a Duchamp.mp3"
+          mp3: "resources/podcast1/Creo que anoche bese a Duchamp.mp3"
         });
       },
       swfPath: "/js",
