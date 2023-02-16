@@ -164,7 +164,11 @@ body{
     scrollbar-width: none;
     -ms-overflow-style: none; 
     transition: scroll-left 0.5s ease-in-out;
+    scrollbar-width: none;
 
+  }
+  .carousel::-webkit-scrollbar{
+    display:none;
   }
   .slick-slide{
     margin:10px;
@@ -263,6 +267,7 @@ body{
     margin: 0 auto;
     display:flex;
     position: relative;
+    overflow-x: hidden;
 }
 
 #nav-footer li{
@@ -431,6 +436,12 @@ body{
         /*margin-left: 1%;*/
         margin-right: 180px;
     }
+    #logos{
+        max-width: 157%;
+        position: relative;
+        left: -149px;
+      
+        }
     #spotify-card {
         width: 74%;
         margin: 1px 190px;
@@ -515,6 +526,12 @@ body{
         bottom:80%;
         
     }
+    #logos{
+        max-width: 141%;
+        position: relative;
+        left: -96px;
+      
+        }
 
     #instagram{
         width: 20%;
@@ -586,6 +603,12 @@ body{
     .redes{
         font-size: 0.8rem;
     }
+    #logos{
+        max-width: 141%;
+        position: relative;
+        left: -84px;
+      
+        }
 
     #instagram{
         width: 20%;
@@ -659,6 +682,12 @@ body{
     .redes{
         font-size: 0.8rem;
     }
+    #logos{
+        max-width: 141%;
+        position: relative;
+        left: -75px;
+      
+        }
 
     #instagram{
         width: 20%;
@@ -729,6 +758,12 @@ body{
     .redes{
         font-size: 0.8rem;
     }
+    #logos{
+        max-width: 141%;
+        position: relative;
+        left: -51px;
+      
+        }
 
     #instagram{
         width: 20%;
@@ -823,6 +858,12 @@ body{
         font-size: 15px;
         margin-right: 10px;
     }
+    #logos{
+        max-width: 141%;
+        position: relative;
+        left: -51px;
+      
+        }
 
     #instagram{
         width: 20%;
@@ -839,6 +880,7 @@ body{
 }
 @media all and (max-width:380px){
     .logo{
+        width: 50%;
         padding-top: 0;
        
     }
@@ -943,6 +985,12 @@ body{
         margin-right: 17px;
         margin-top: 16px;
     }
+    #logos{
+        max-width: 141%;
+        position: relative;
+        left: -51px;
+      
+        }
 
     #instagram{
         width: 20%;

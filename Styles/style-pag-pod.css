@@ -486,11 +486,14 @@ body{
     width: 100%;
     max-width: 100%;
     background-image: url(../resources/main/footer-web.png);
-    padding: 1rem 0;
+    margin: 0 auto;
     display:flex;
-    position: block;
+    position: relative;
+    overflow-x: hidden;
 }
-
+#nav-footer{
+  width:50%;
+}
 #nav-footer li{
   list-style: none;
   padding-bottom: 0.5rem;
@@ -511,6 +514,9 @@ body{
     /*margin-left: 7%;*/
     padding-top: 68px;
     max-width: 73%;
+    padding-top: 5%;
+      margin-right: 180px;
+
 
     
     
@@ -593,14 +599,19 @@ body{
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
     .info{
-        margin-left: 10%;
+      font-size: 15px;
+      padding-top: 6%;
+      margin-left: 1%;
+      margin-right: 180px;
     }
 }
 @media all and (min-width:1024px) and (max-width:1280px){
    
-   
+   .pages{
+    margin-right: 0;
+   }
     .pages li{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .title h1{
         font-size: 4rem;
@@ -635,8 +646,18 @@ body{
     }
 
     .info{
-        margin-left: 3%;
+        /* margin-left: 3%; */
+       padding-top: 127px;
+       max-width: 64%;
         
+    }
+    .redes {
+      right: 16%;
+    }
+    #logos{
+    max-width: 153%;
+    position: relative;
+    left: -180px;
     }
 }
 @media all and (min-width:831px) and (max-width:1024px){
@@ -655,9 +676,10 @@ body{
     }
 
     .info{
-        font-size: 0.6rem;
-        padding-top: 10%;
-        margin-left: 1%;
+      font-size: 15px;
+      padding-top: 14%;
+      /*margin-left: 1%;*/
+      margin-right: 180px;
     }
     .titulo-podcast {
       margin-left: 84px;
@@ -699,6 +721,11 @@ body{
       width:85%;
       
       
+    }
+    #logos {
+      max-width: 173%;
+      position: relative;
+      left: -180px;
     }
     #instagram{
         width: 20%;
@@ -825,15 +852,24 @@ body{
     }
 
     .info{
-        font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 12%;
+      font-size: 0.8rem;
+      padding-top: 1%;
+      margin-left: 12%;
+      margin-right: 0;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+        left: 79%;
+        right: 0;
+        bottom: 80%;
+    }
+    #logos {
+      max-width: 143%;
+      position: relative;
+      left: -105px;
     }
 
     #instagram{
@@ -865,7 +901,9 @@ body{
         margin-top: 60px;
     }
  
-  
+    .pages{
+      top: 15px;
+    }
 
     .pages li{
         padding: 0rem 0.3rem;
@@ -940,15 +978,21 @@ body{
     }
 
     .info{
-        font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 12%;
+      font-size: 0.8rem;
+      padding-top: 1%;
+      margin-left: 12%;
+      margin-right: 0;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+    }
+    #logos {
+      max-width: 143%;
+      position: relative;
+      left: -88px;
     }
 
     #instagram{
@@ -981,14 +1025,14 @@ body{
     }
  
     .pages {
-      margin-right: -1.5rem;
-      top: 22px;
-      right: 42px;
+      margin-right: -2.5rem;
+      top: 25px;
+      right: 50px;
     }
     .pages li{
         padding: 0rem .5rem;
         padding-top: 1rem;
-        font-size: 0.9rem; /* px */
+        font-size: 0.7rem; /* px */
     }
     .titulo-podcast {
       padding: 0 3%;
@@ -1062,14 +1106,20 @@ body{
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
+        padding-top: 1%;
         margin-left: 12%;
+        margin-right: 0;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+    }
+    #logos {
+      max-width: 143%;
+      position: relative;
+      left: -74px;
     }
 
     #instagram{
@@ -1218,14 +1268,20 @@ body{
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
+        padding-top: 1%;
         margin-left: 12%;
+        margin-right: 0;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+    }
+    #logos {
+      max-width: 143%;
+      position: relative;
+      left: -58px;
     }
 
     #instagram{
@@ -1244,11 +1300,13 @@ body{
 @media all and (max-width:481px){
 
    .logo{
-    min-width: 224px;
+    width: 50%;
+    padding-top: 0.5rem;
    }
 
     .logo img{
-      width: 100%;
+      width: 70%;
+      min-width: 223px;
     }  
    
       /* CONTENIDO PRINCIPAL */
@@ -1411,9 +1469,10 @@ body{
     }
 
     .info{
-        font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 1%;
+      font-size: 0.8rem;
+      padding-top: 1%;
+      margin-left: 14%;
+      margin-right: 0;
     }
     .footer{
         flex-direction: column;
@@ -1421,6 +1480,11 @@ body{
     .redes{
         font-size: 0.8rem;
         margin-right: 10px;
+    }
+    #logos {
+      max-width: 143%;
+      position: relative;
+      left: -58px;
     }
 
     #instagram{
@@ -1439,11 +1503,12 @@ body{
 @media all and (max-width:385px){
     .logo{
       padding-top: 0;
+      width:50%;
     }
     
     .logo img{
       width: 70%;
-      min-width:223px;
+      min-width: 224px;
     }  
     .contenido-principal{
         flex-direction: column-reverse;
@@ -1600,9 +1665,9 @@ body{
     }
 
     .info{
-        font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 1%;
+      font-size: 0.8rem;
+      padding-top: 1%;
+      margin-left: 14%;
     }
     .footer{
         flex-direction: column;
@@ -1610,6 +1675,11 @@ body{
     .redes{
         font-size: 0.8rem;
         margin-right: 10px;
+    }
+    #logos {
+      max-width: 143%;
+      position: relative;
+      left: -58px;
     }
 
     #instagram{

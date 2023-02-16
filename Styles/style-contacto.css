@@ -163,6 +163,7 @@ textarea {
     margin: 0 auto;
     display:flex;
     position: relative;
+    overflow-x: hidden;
 }
 
 #nav-footer li{
@@ -249,7 +250,9 @@ textarea {
     }
   
     .info{
-        margin-left: 10%;
+        margin-left: 3%;
+        padding-top: 127px;
+        max-width: 64%;
     }
 }
 @media all and (min-width:1024px) and (max-width:1280px){
@@ -273,8 +276,15 @@ textarea {
     }
 
     .info{
-        margin-left: 3%;
+        margin-left: 0;
+        padding-top: 127px;
+        max-width: 64%;
         
+    }
+    #logos{
+        max-width: 135%;
+        position: relative;
+        right: 113px;
     }
 }
 @media all and (min-width:831px) and (max-width:1024px){
@@ -290,9 +300,15 @@ textarea {
  
 
     .info{
-        font-size: 0.6rem;
-        padding-top: 10%;
+        font-size: 15px;
+        padding-top: 14%;
         margin-left: 1%;
+        margin-right: 180px;
+    }
+    #logos{
+        max-width: 163%;
+        position: relative;
+        right: 164px;
     }
 
     #instagram{
@@ -337,14 +353,19 @@ textarea {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 12%;
+        padding-top: 1%;
+        margin-left: 19%;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+    }
+    #logos{
+        max-width: 163%;
+        position: relative;
+        right: 161px;
     }
 
     #instagram{
@@ -389,14 +410,19 @@ textarea {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 12%;
+        padding-top: 1%;
+        margin-left: 19%;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+    }
+    #logos{
+        max-width: 163%;
+        position: relative;
+        right: 144px;
     }
 
     #instagram{
@@ -444,14 +470,19 @@ textarea {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 12%;
+        padding-top: 1%;
+        margin-left: 19%;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+    }
+    #logos{
+        max-width: 163%;
+        position: relative;
+        right: 116px;
     }
 
     #instagram{
@@ -498,8 +529,8 @@ textarea {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 12%;
+        padding-top: 1%;
+        margin-left: 19%;
     }
     .footer{
         flex-direction: column;
@@ -507,6 +538,12 @@ textarea {
     .redes{
         font-size: 0.8rem;
     }
+    #logos{
+        max-width: 163%;
+        position: relative;
+        right: 92px;
+    }
+   
 
     #instagram{
         width: 20%;
@@ -522,6 +559,10 @@ textarea {
     }
 }
 @media all and (max-width:480px){
+    .logo{
+        padding-top: 0;
+        width: 50%;
+    }
 
     .logo img{
         width: 70%;
@@ -566,14 +607,20 @@ textarea {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 1%;
+        padding-top: 1%;
+        margin-left: 19%;
+    }
+    #logos{
+        max-width: 163%;
+        position: relative;
+        right: 78px;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+        right: 15%;
     }
 
     #instagram{
@@ -592,6 +639,7 @@ textarea {
 @media all and (max-width:380px){
     .logo{
         padding-top: 0;
+        width:50%;
     }
     
     .logo img{
@@ -635,14 +683,20 @@ textarea {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 1%;
+        padding-top: 1%;
+        margin-left: 19%;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+        right: 15%;
+    }
+    #logos{
+        max-width: 163%;
+        position: relative;
+        right: 58px;
     }
 
     #instagram{

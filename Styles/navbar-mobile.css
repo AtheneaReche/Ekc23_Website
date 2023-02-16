@@ -97,7 +97,7 @@
       
       .pages .menu-items {
         padding-top: 77px;
-        background-color: rgba(117, 59, 189, 0.9);
+        background-color: rgba(117, 59, 189, 1);
         height: 34vh;
         width: 100%;
         transform: translate(150%);
@@ -229,7 +229,7 @@
   
   .pages .menu-items {
     padding-top: 77px;
-    background-color: rgba(117, 59, 189, 0.9);
+    background-color: rgba(117, 59, 189, 1);
     height: 45vh;
     width: 100%;
     transform: translate(150%);
@@ -318,7 +318,7 @@
     height: 32px;
     width: 32px;
     top: 20px;
-    left: 75px;
+    left: 96px;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
@@ -329,8 +329,8 @@
     height: 26px;
     width: 32px;
     position: absolute;
-    top: 20px;
-    left: 75px;
+    top: 23px;
+    left: 103px;  
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -361,7 +361,7 @@
   
   .pages .menu-items {
     padding-top: 77px;
-    background-color: rgba(117, 59, 189, 0.9);
+    background-color: rgba(117, 59, 189, 1);
     height: 52vh;
     width: 100%;
     transform: translate(150%);
@@ -370,7 +370,7 @@
     margin-left: -28px;
     padding-left: 3px;
     padding-right: 8px;
-  
+    z-index: 99;
     transition: transform 0.5s ease-in-out;
     text-align: center;
   }
