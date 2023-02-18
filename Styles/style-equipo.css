@@ -128,24 +128,24 @@ body {
     flex: 1;
     align-items: flex-start;
     width: 100%;
-    padding-left: 3%;
     padding-top: 120px;
 }
-.title h1{
-    font-size: 4.5rem; /* 112px */ 
-}
+    .title h1 {
+        margin-left: 94px;
+        font-size: 4.5rem; /* 112px */
+    }
 
 
 /* ----4. Gallery---- */
 
 .creadores {
-    max-width: 100%;
+    max-width: 80%;
     display: flex;
     margin-top: 5%;
 }
 
 .creadores h2 {
-    margin-left: 3rem;
+    margin-left: 94px;
     font-size: 2.5rem;
 }
 
@@ -154,20 +154,19 @@ body {
     display: flex;
 }
 
-.creadores2 h2 {
-        margin-left: 3rem;
-        
-}
+    .creadores2 h2 {
+        margin-left: 94px;
+        font-size: 2.5rem;
+    }
 
 
 .fotos-creadores {
+    margin: 0, 94px, 0,94px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin-left: 3rem;
+    grid-template-columns: repeat(5, 1fr);
     padding: 0;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 
 .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5 .imagen-creador6 {
@@ -187,8 +186,7 @@ body {
     background-image: url(../resources/main/footer-web.png);
     margin: 0 auto;
     display:flex;
-    overflow-x: hidden;
-    
+    position: relative;
 }
 
 #nav-footer li{
@@ -207,21 +205,13 @@ body {
 .info{
     color: #ffffff;
     text-align: center;
-     /* margin:0 auto; */
-    /*margin-left: 7%;*/
-    padding-top: 87px;
-    max-width: 73%;
+    margin:0 auto;
+    margin-left: 20%;
+    padding-top: 2.7rem;
 
+    
+    
 }
-.info p{
-    margin:0;
-}
-#logos{
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    max-height: 50%;
-  }
 .redes{
     color: #ffffff;
     max-width: 100px;
@@ -277,24 +267,18 @@ body {
     }
   
     .info{
-        margin-left: 3%;
-        padding-top: 127px;
-        max-width: 64%;
+        margin-left: 10%;
     }
     .fotos-creadores {
+        margin-right: 50px;
+        margin-left: 94px;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        margin-left: 2rem;
       }
       .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5 .imagen-creador6 {
         width: 104%;
         
       }
-      #logos{
-        max-width: 135%;
-        position: relative;
-        left: 30px;
-    }
 }
 @media all and (min-width:1024px) and (max-width:1280px){
    
@@ -306,13 +290,14 @@ body {
     .title h1{
         font-size: 3.5rem;
     }
-   
- 
+
+
     .fotos-creadores {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        margin-left: 2rem;
-      }
+        margin-right: 50px;
+        margin-left: 94px;
+    }
       .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5 .imagen-creador6 {
         width: 104%;
         
@@ -325,9 +310,7 @@ body {
     }
 
     .info{
-        /*margin-left: 3%;*/
-        padding-top: 127px;
-        max-width: 64%;
+        margin-left: 3%;
         
     }
 }
@@ -344,25 +327,20 @@ body {
  
 
     .info{
-        font-size: 15px;
-        padding-top: 14%;
-        margin-left: 0;
-        margin-right: 180px;
+        font-size: 0.6rem;
+        padding-top: 10%;
+        margin-left: 1%;
     }
     .fotos-creadores {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        margin-left: 2rem;
-      }
+        margin-right: 50px;
+        margin-left: 94px;
+    }
       .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5 .imagen-creador6 {
         width: 104%;
         
       }
-      #logos{
-        max-width: 163%;
-        position: relative;
-        left: -150px;
-    }
 
     #instagram{
         width: 20%;
@@ -398,8 +376,9 @@ body {
     .fotos-creadores {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        margin-left: 2rem;
-      }
+        margin-right: 50px;
+        margin-left: 94px;
+    }
       .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5 .imagen-creador6 {
         width: 104%;
         
@@ -413,10 +392,9 @@ body {
     }
 
     .info{
-        font-size: 15px;
-        padding-top: 1%;
-        margin-left: 168px;
-        margin-right: 180px;
+        font-size: 0.8rem;
+        padding-top: 6%;
+        margin-left: 12%;
     }
     .footer{
         flex-direction: column;
@@ -424,11 +402,7 @@ body {
     .redes{
         font-size: 0.8rem;
     }
-    #logos{
-        max-width: 154%;
-        position: relative;
-        left: -113px;
-    }
+
     #instagram{
         width: 20%;
     }
@@ -451,15 +425,10 @@ body {
         padding-left: 6%;
        
       }
-    .title h1{
-        font-size: 2rem;
-        margin-left: 0;
-    }
-    .pages{
-        margin-right: -3.5rem;
-        top:24px;
-        right:62px;
-    }
+     .title h1 {
+            font-size: 2rem;
+            margin-left: 35px;
+      }
    
     .pages li{
         padding: 0rem 1rem;
@@ -467,14 +436,15 @@ body {
         font-size: 0.9rem; /* px */
     }
     .creadores h2 {
-        margin-left: 2rem;
-         font-size: 2rem;
-       }
+        margin-left: 85px;
+        font-size: 2rem;
+    }
     .fotos-creadores {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 2rem;
-      }
+        margin-right: 60px;
+        margin-left: 85px;
+    }
       .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5 .imagen-creador6 {
         width: 104%;
         
@@ -489,19 +459,14 @@ body {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 1%;
-        margin-left: 17%;
+        padding-top: 6%;
+        margin-left: 12%;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
-    }
-    #logos{
-        max-width: 156%;
-        position: relative;
-        left: -92px;
     }
 
     #instagram{
@@ -528,27 +493,22 @@ body {
     .title h1{
         font-size: 1.8rem;
         margin-top: 20px;
+        margin-left: 55px;
     }
-    .pages {
-        margin-right: -1.5rem;
-        top: 25px;
-        right: 38px;
-      }
+   
 
     .pages li{
-        padding: 0rem 0.5rem;
+        padding: 0rem 1rem;
         padding-top: 1rem;
-        font-size: 0.7rem; /* px */
+        font-size: 0.9rem; /* px */
     }
     .creadores h2 {
-       margin-left: 2rem;
         font-size: 2rem;
       }
 
     .fotos-creadores {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        margin-left: 2rem;
       }
       .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5 .imagen-creador6 {
         width: 104%;
@@ -566,19 +526,14 @@ body {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 1%;
-        margin-left: 17%;
+        padding-top: 6%;
+        margin-left: 12%;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
-    }
-    #logos{
-        max-width: 156%;
-        position: relative;
-        left: -96px;
     }
 
     #instagram{
@@ -595,24 +550,25 @@ body {
     }
 }
 @media all and (min-width:481px) and (max-width:530px){
-    .logo{
-        width:50%;
-        padding-top: 0;
-    }
     .logo img{
-        width: 70%;
-        min-width: 223px;
+        width: 80%;
     }
     .title {
-        padding-left: 6%;
        
       }
     .title h1{
         font-size: 1.8rem;
+        margin-left: 60px;
+       
+
     }
-   
+    .creadores h2 {
+        margin-left: 90px;
+        font-size: 2rem;
+    }
+ 
     .pages li{
-        padding: 0rem 1rem;
+        
         padding-top: 1rem;
         font-size: 0.9rem; /* px */
     }
@@ -620,7 +576,8 @@ body {
     .fotos-creadores {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin-left: 2rem;
+        margin-left: 130px;
+        margin-right: 60px;
       }
       .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5 .imagen-creador6 {
         width: 104%;
@@ -636,8 +593,8 @@ body {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 1%;
-        margin-left: 19%;
+        padding-top: 6%;
+        margin-left: 12%;
     }
     .footer{
         flex-direction: column;
@@ -680,18 +637,16 @@ body {
     }
     .title h1{
         font-size: 1.4rem;
-        margin-left: 1rem;
+        margin-left: 80px;
         
     }
     .creadores h2 {
-        margin-left: 2rem;
          font-size: 1.5rem;
        }
    
       .fotos-creadores {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin-left: 2rem;
       }
       .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5 .imagen-creador6 {
         width: 104%;
@@ -707,21 +662,15 @@ body {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 1%;
-        margin-left: 20%;
+        padding-top: 6%;
+        margin-left: 1%;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
-        margin-right: 10px;
     }
-    #logos {
-        max-width: 157%;
-        position: relative;
-        left: -73px;
-      }
 
     #instagram{
         width: 20%;
@@ -738,13 +687,12 @@ body {
 }
 @media all and (max-width:380px){
     .logo{
-        padding-top: 0;
-        width: 50%;
+        width:60%;
+        min-width: 223px;
     }
     
     .logo img{
         width: 70%;
-        min-width: 223px;
     }  
     .contenido-principal{
         flex-direction: column-reverse;
@@ -763,7 +711,6 @@ body {
         font-size: 1.4rem;
     }
     .creadores h2 {
-        margin-left: 2rem;
          font-size: 1.5rem;
        }
   
@@ -781,7 +728,6 @@ body {
       .fotos-creadores {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-left: 2rem;
       }
       .imagen-creador1, .imagen-creador2, .imagen-creador3, .imagen-creador4, .imagen-creador5 .imagen-creador6 {
         width: 104%;
@@ -794,13 +740,11 @@ body {
       #nav-footer a{
         padding: 0rem 0rem;
     }
-    .redes{
-        right:16%;
-    }
+
     .info{
         font-size: 0.8rem;
-        padding-top: 1%;
-        margin-left: 19%;
+        padding-top: 6%;
+        margin-left: 1%;
     }
     .footer{
         flex-direction: column;
