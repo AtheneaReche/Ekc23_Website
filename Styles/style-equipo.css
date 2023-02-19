@@ -161,7 +161,8 @@ body {
 
 
 .fotos-creadores {
-    margin: 0, 94px, 0,94px;
+    margin-right: 50px;
+    margin-left: 94px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding: 0;
@@ -186,7 +187,8 @@ body {
     background-image: url(../resources/main/footer-web.png);
     margin: 0 auto;
     display:flex;
-    position: relative;
+    overflow-x: hidden;
+    
 }
 
 #nav-footer li{
@@ -205,13 +207,21 @@ body {
 .info{
     color: #ffffff;
     text-align: center;
-    margin:0 auto;
-    margin-left: 20%;
-    padding-top: 2.7rem;
+     /* margin:0 auto; */
+    /*margin-left: 7%;*/
+    padding-top: 87px;
+    max-width: 73%;
 
-    
-    
 }
+.info p{
+    margin:0;
+}
+#logos{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    max-height: 50%;
+  }
 .redes{
     color: #ffffff;
     max-width: 100px;
@@ -267,7 +277,9 @@ body {
     }
   
     .info{
-        margin-left: 10%;
+        margin-left: 3%;
+        padding-top: 127px;
+        max-width: 64%;
     }
     .fotos-creadores {
         margin-right: 50px;
@@ -279,6 +291,11 @@ body {
         width: 104%;
         
       }
+      #logos{
+        max-width: 135%;
+        position: relative;
+        left: 30px;
+    }
 }
 @media all and (min-width:1024px) and (max-width:1280px){
    
@@ -310,7 +327,9 @@ body {
     }
 
     .info{
-        margin-left: 3%;
+        /*margin-left: 3%;*/
+        padding-top: 127px;
+        max-width: 64%;
         
     }
 }
@@ -327,9 +346,10 @@ body {
  
 
     .info{
-        font-size: 0.6rem;
-        padding-top: 10%;
-        margin-left: 1%;
+        font-size: 15px;
+        padding-top: 14%;
+        margin-left: 0;
+        margin-right: 180px;
     }
     .fotos-creadores {
         display: grid;
@@ -341,6 +361,11 @@ body {
         width: 104%;
         
       }
+      #logos{
+        max-width: 163%;
+        position: relative;
+        left: -150px;
+    }
 
     #instagram{
         width: 20%;
@@ -392,9 +417,10 @@ body {
     }
 
     .info{
-        font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 12%;
+        font-size: 15px;
+        padding-top: 1%;
+        margin-left: 168px;
+        margin-right: 180px;
     }
     .footer{
         flex-direction: column;
@@ -402,7 +428,11 @@ body {
     .redes{
         font-size: 0.8rem;
     }
-
+    #logos{
+        max-width: 154%;
+        position: relative;
+        left: -113px;
+    }
     #instagram{
         width: 20%;
     }
@@ -425,10 +455,15 @@ body {
         padding-left: 6%;
        
       }
-     .title h1 {
-            font-size: 2rem;
-            margin-left: 35px;
-      }
+    .title h1{
+        font-size: 2rem;
+        margin-left: 35px;
+    }
+    .pages{
+        margin-right: -3.5rem;
+        top:24px;
+        right:62px;
+    }
    
     .pages li{
         padding: 0rem 1rem;
@@ -459,14 +494,19 @@ body {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 12%;
+        padding-top: 1%;
+        margin-left: 17%;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+    }
+    #logos{
+        max-width: 156%;
+        position: relative;
+        left: -92px;
     }
 
     #instagram{
@@ -495,12 +535,16 @@ body {
         margin-top: 20px;
         margin-left: 55px;
     }
-   
+    .pages {
+        margin-right: -1.5rem;
+        top: 25px;
+        right: 38px;
+      }
 
     .pages li{
-        padding: 0rem 1rem;
+        padding: 0rem 0.5rem;
         padding-top: 1rem;
-        font-size: 0.9rem; /* px */
+        font-size: 0.7rem; /* px */
     }
     .creadores h2 {
         font-size: 2rem;
@@ -526,14 +570,19 @@ body {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 12%;
+        padding-top: 1%;
+        margin-left: 17%;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+    }
+    #logos{
+        max-width: 156%;
+        position: relative;
+        left: -96px;
     }
 
     #instagram{
@@ -550,8 +599,13 @@ body {
     }
 }
 @media all and (min-width:481px) and (max-width:530px){
+    .logo{
+        width:50%;
+        padding-top: 0;
+    }
     .logo img{
-        width: 80%;
+        width: 70%;
+        min-width: 223px;
     }
     .title {
        
@@ -593,8 +647,8 @@ body {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 12%;
+        padding-top: 1%;
+        margin-left: 19%;
     }
     .footer{
         flex-direction: column;
@@ -662,15 +716,21 @@ body {
 
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 1%;
+        padding-top: 1%;
+        margin-left: 20%;
     }
     .footer{
         flex-direction: column;
     }
     .redes{
         font-size: 0.8rem;
+        margin-right: 10px;
     }
+    #logos {
+        max-width: 157%;
+        position: relative;
+        left: -73px;
+      }
 
     #instagram{
         width: 20%;
@@ -687,12 +747,13 @@ body {
 }
 @media all and (max-width:380px){
     .logo{
-        width:60%;
-        min-width: 223px;
+        padding-top: 0;
+        width: 50%;
     }
     
     .logo img{
         width: 70%;
+        min-width: 223px;
     }  
     .contenido-principal{
         flex-direction: column-reverse;
@@ -740,11 +801,13 @@ body {
       #nav-footer a{
         padding: 0rem 0rem;
     }
-
+    .redes{
+        right:16%;
+    }
     .info{
         font-size: 0.8rem;
-        padding-top: 6%;
-        margin-left: 1%;
+        padding-top: 1%;
+        margin-left: 19%;
     }
     .footer{
         flex-direction: column;
