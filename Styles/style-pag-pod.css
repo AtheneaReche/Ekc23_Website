@@ -1300,7 +1300,7 @@ body{
 @media all and (max-width:481px){
 
    .logo{
-    width: 50%;
+    
     padding-top: 0.5rem;
    }
 
@@ -1375,6 +1375,9 @@ body{
       }
 
       /* FOTOS DE ARCHIVO */
+      .full-image {
+        max-width: 95%;
+      }
       .full-image.open{
         width: 99%;
       }
@@ -1600,6 +1603,10 @@ body{
       
 
       /* FOTOS DE ARCHIVO */
+      .full-image {
+        
+        max-width: 95%;
+      }
       .full-image.open{
         width: 99%;
       }

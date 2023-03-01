@@ -18,7 +18,7 @@
     @media screen and (max-width:1024px){
       div.correo {padding-top:30px;padding-left:10px;padding-bottom:180px;padding-right:10px;align-items: flex-start;}
       img.responsive {width: 280px;margin: 10px 65px 0 0;float:right;}
-      p.habla {font-size:32px;}
+      h1.habla {font-size:32px;}
       div.formula {width:90%;}
       input.inputfuente {font-size:17px;}
       textarea.inputfuente {font-size:16px;}
@@ -28,7 +28,7 @@
     @media screen and (min-width:1025px){
       div.correo {padding-top:130px;padding-left:60px;padding-bottom:180px;padding-right:60px;align-items: flex-start;}
       img.responsive{width: 600px;margin: 130px 15px 0 0;float:right;}
-      p.habla {font-size:48px;}
+      h1.habla {font-size:48px;}
       div.formula {width:50%;}
       input.inputfuente {font-size:24px;}
       textarea.inputfuente {font-size:20px;}
@@ -38,6 +38,17 @@
     img.responsive{height: auto;}
     div.formula{height:auto;}
     div.correo{height:auto;}
+
+    @keyframes focus-in{
+    0%{
+        filter: blur(12px);
+        opacity:0;
+    }
+    100%{
+        filter: blur(0px);
+        opacity:1;
+    }
+}
     </style>
 </head>
 <body>
@@ -80,7 +91,7 @@
                     <div class="imagen">
                         <img src="resources/contacto/opcion 4.png" class="responsive">
                     </div>
-                    <p style="font-size:48px;" class="habla">¡Hablemos!</p>
+                    <h1 style="font-size:48px; animation: focus-in 1s; color: #753BBD; " class="habla">¡Hablemos!</h1>
                     <p style="font-size:28px;">Escríbenos un mensaje y nuestro equipo te<br>responderá lo más rápido posible</p>
                     <div class="formula">
                         <form action="contacto.php" method="post" name="formulario">
@@ -124,7 +135,7 @@
                         con la colaboración de estudiantes de Ciencias de la Comunicación (Formatos radiofónicos), con el apoyo y colaboración: </p>
                         <img id="logos" src="resources/logos.png">
                     <p>Sitio web creado por el equipo de desarrollo web de EKC23</p>
-                    <p>Aviso Legal</p>
+                    
                 </div>
                
             </div>

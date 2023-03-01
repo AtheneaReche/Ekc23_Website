@@ -147,6 +147,7 @@ textarea {
     margin: 50%; /* Esto está modificado al bulto porque como no hay contenido en la página el
                     footer se come la barra de navegación y queda inutilizada */
     font-size: 7rem; /* 112px */ 
+    
 }
 
 

@@ -140,7 +140,7 @@ body{
 }
 .title h1{
     color: #753BBD; 
-    font-size: 6rem; /* 96px */ 
+    font-size: 4.5rem; /* 96px */ 
     margin-left: 61px;
     animation: focus-in 1s;
 }
@@ -366,7 +366,7 @@ body{
     }
 
     .title h1{
-        font-size: 5rem;
+        font-size: 4rem;
         line-height: 0;
         margin-top: 3rem;
         margin-left: 67px;
